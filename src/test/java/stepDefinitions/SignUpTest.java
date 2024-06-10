@@ -61,7 +61,7 @@ public class SignUpTest {
     @Given("User visits home page to sign up")
     public void user_visits_on_the_homepage() {
         // Navigate to the home page URL
-        driver.get("http://localhost");
+        driver.get("http://localhost"); // your app should run on local host
     }
 
     // When step: User clicks on the Sign Up button
@@ -133,11 +133,11 @@ public class SignUpTest {
     public void admin_logins_with_email_and_password_to_approve_a_user() {
         // Wait for the email field to be clickable and then input the admin email
         WebElement emailField = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("app-header #signUp app-login-page .auth-form #loginEmail")));
-        emailField.sendKeys("ashiqadmin@gmail.com");
+        emailField.sendKeys("admin@uranus.com");  // change it to your admin email if it is other than this
 
         // Wait for the password field to be clickable and then input the admin password
         WebElement passwordField = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("app-header #signUp app-login-page .auth-form #loginPassword")));
-        passwordField.sendKeys("Khan54321@");
+        passwordField.sendKeys("g8rD%+"); // change it to your admin password if it is other than this
 
         // Wait for the login submit button to be clickable and then click it
         WebElement loginSubmitButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("app-header #signUp app-login-page .auth-form button")));
