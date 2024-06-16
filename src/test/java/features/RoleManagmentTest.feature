@@ -11,5 +11,5 @@ Feature: Role Managment Test
         Scenario: User changes the role of another registered user
             Given The user visits the homepage
              When The user clicks on the login button
-             When The user logins with correct email address and password
-             Then The user should not have an admin panel to access/update other users roles
+             When The user logins with their email address and password
+             Then The user should not have an admin panel to access and update other users roles

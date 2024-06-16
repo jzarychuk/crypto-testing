@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import com.github.javafaker.Faker;
 import java.time.Duration;
+import java.util.Collections;
 
 // Define the SignUpTest class which contains all the test methods
 public class SignUpTest {
@@ -40,6 +41,8 @@ public class SignUpTest {
         // Define Chrome options for the browser
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+		chromeOptions.setExperimentalOption("useAutomationExtension", false);
+		chromeOptions.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation")); 
         // Initialize the WebDriver with ChromeDriver and the defined options
         driver = new ChromeDriver(chromeOptions);
         // Maximize the browser window

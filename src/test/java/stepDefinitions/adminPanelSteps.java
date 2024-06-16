@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import com.github.javafaker.Faker;
 import java.time.Duration;
+import java.util.Collections;
 
 public class adminPanelSteps {
 
@@ -30,7 +31,8 @@ public class adminPanelSteps {
         // define Chrome options for the browser
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-
+		chromeOptions.setExperimentalOption("useAutomationExtension", false);
+		chromeOptions.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation")); 
         // initialize the WebDriver with ChromeDriver and the defined options
         driver = new ChromeDriver(chromeOptions);
 
