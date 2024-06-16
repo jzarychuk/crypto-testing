@@ -19,8 +19,8 @@ import java.util.Collections;
 
 public class adminPanelSteps {
 
-    WebDriver driver;
-    WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
 
     @Before
     public void setUp(){
@@ -32,7 +32,10 @@ public class adminPanelSteps {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 		chromeOptions.setExperimentalOption("useAutomationExtension", false);
-		chromeOptions.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation")); 
+		chromeOptions.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
+        chromeOptions.addArguments("disable-infobars");
+        chromeOptions.addArguments("--disable-notifications");
+        chromeOptions.addArguments("--disable-popup-blocking");
         // initialize the WebDriver with ChromeDriver and the defined options
         driver = new ChromeDriver(chromeOptions);
 

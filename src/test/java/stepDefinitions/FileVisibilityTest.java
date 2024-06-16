@@ -22,7 +22,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class RoleManagmentTest {
+public class FileVisibilityTest {
 
 	private WebDriver browser;
 	private WebDriverWait wait;
@@ -54,19 +54,19 @@ public class RoleManagmentTest {
 
 	//Scenario: Admin changes the role of a registered user
 	
-	@Given("Admin visits homepage")
+	@Given("The admin visits the homepage")
 	public void Admin_visits_homepage() {
 		browser.get("http://localhost/#/index");
 		
 	}
-	@When("Admin clicks on login button")
+	@When("The admin presses the login button")
 	public void Admin_clicks_on_login_button() {
 
 		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(
 				By.cssSelector("#collapsibleNavId > div > a.btn.fs-14.btn-outline-secondary.me-2.my-2.my-sm-0.ng-star-inserted")));
 		((JavascriptExecutor) browser).executeScript("arguments[0].click();", login);
 	}
-	@When("Admin logins with email and password")
+	@When("The admin logins with email and password")
 	public void Admin_logins_with_emailand_password() {
 		
 		String email = "admin@uranus.com";
@@ -87,63 +87,45 @@ public class RoleManagmentTest {
 		login_click.click();
 	}
 	
-	@When("Admin visits Admin Panel")
+	@When("The admin clicks on the Admin Panel tab")
 	public void Admin_visits_Admin_Panel() {
 		WebElement adminPortal = wait.until(ExpectedConditions.elementToBeClickable(
 			By.xpath("/html/body/app-root/app-layout/app-header/header/nav/div/div/ul/li[8]/a")));
 		((JavascriptExecutor) browser).executeScript("arguments[0].click();", adminPortal);
 	}
 	
-	@When("Admin clicks on Registered Accounts tab")
-	public void Admin_clicks_on_Registered_Accounts_tab() {
-		WebElement reg_accounts_tab = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#reg-tab")));
-		((JavascriptExecutor) browser).executeScript("arguments[0].click();", reg_accounts_tab);
+	@When("The admin clicks on the Resources category")
+	public void The_admin_clicks_on_the_Resources_category() {
+		WebElement resources = wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("/html/body/app-root/app-layout/div/app-admin-layout/div/div/div[1]/ul/li[3]/button")));
+		((JavascriptExecutor) browser).executeScript("arguments[0].click();", resources);
 		
 	}
 	
-	@Then("Admin changes the first user role to Employee")
-	public void Admin_changes_the_first_user_role_to_Employee()
-	{
-		WebElement reg_accounts_tab = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#reg-tab")));
-		((JavascriptExecutor) browser).executeScript("arguments[0].click();", reg_accounts_tab);
-
-		WebElement edit_role_button = wait.until(ExpectedConditions.elementToBeClickable(
-				By.cssSelector("#pr_id_5-table > tbody > tr:nth-child(1) > td:nth-child(6) > div > button")));
-		edit_role_button.click();
-
-		try {
-			Select roles_menu = new Select(browser.findElement(By.xpath(
-					"/html/body/app-root/app-layout/div/app-admin-layout/div/div/div[2]/div/div[1]/app-accounts/div/div[3]/app-user-account/p-table/div/div/table/tbody/tr[1]/td[4]/p-celleditor/select")));
-			roles_menu.selectByValue("Employee");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		WebElement approve_button = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
-				"#pr_id_5-table > tbody > tr:nth-child(1) > td:nth-child(6) > div > button.p-element.p-button-rounded.p-button-text.p-button-success.mr-2.p-button.p-component.p-button-icon-only.ng-star-inserted > span")));
-		approve_button.click();
-		WebElement current_role = wait.until(ExpectedConditions.elementToBeClickable(
-				By.cssSelector("#pr_id_5-table > tbody > tr:nth-child(1) > td:nth-child(4) > p-celleditor")));
-		Assert.assertEquals("Employee", current_role.getText());
-
+	@When("The admin clicks on the Choose button to select a file for upload")
+	public void The_admin_clicks_on_the_Choose_button_to_select_a_file_for_upload() {
+		WebElement choose_button = wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("/html/body/app-root/app-layout/div/app-admin-layout/div/div/div[2]/div/div[3]/app-resources/div[1]/div/div/p-fileupload/div/div[1]/span/span[2]")));
+			choose_button.sendKeys("C:\\Users\\basha\\Downloads\\joins-sql.png");
+			
 	}
-	
-	//Secenario: User changes the role of another registered user
-	
-	@Given("The user visits the homepage")
-	public void The_user_visits_the_homepage() {
-		browser.get("http://localhost/#/index");
-	}
-	
-	@When("The user clicks on the login button")
-	public void the_user_clisk_on_the_login_button() {
-		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(
-				By.cssSelector("#collapsibleNavId > div > a.btn.fs-14.btn-outline-secondary.me-2.my-2.my-sm-0.ng-star-inserted")));
-		((JavascriptExecutor) browser).executeScript("arguments[0].click();", login);
-	}
-	
-	@When("The user logins with their email address and password")
-	public void The_user_logins_with_correct_email_address_and_password() {
+	@When("The admin clicks the Upload button")
+	public void The_admin_clicks_the_Upload_button() {
+		WebElement upload_button = wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("/html/body/app-root/app-layout/div/app-admin-layout/div/div/div[2]/div/div[3]/app-resources/div[1]/div/div/p-fileupload/div/div[1]/p-button[1]/button/span[2]")));
+			upload_button.click();
 		
+	}
+	@Then("The file is uploaded to the app")
+	public void The_file_is_uploaded_to_the_app() {
+				
+		WebElement download_button = wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("/html/body/app-root/app-layout/div/app-admin-layout/div/div/div[2]/div/div[3]/app-resources/div[2]/div/div/button/span/span")));
+			Assert.assertTrue(download_button.isDisplayed());
+	}
+	
+	@When("The admin logins as user with email and password")
+	public void The_admin_logins_as_user_with_email_and_password() {
 		String email = AccountCreationAndApprovalTest.email_temp;
 		String password = AccountCreationAndApprovalTest.password_temp;
 		
@@ -161,16 +143,20 @@ public class RoleManagmentTest {
 				"/html/body/app-root/app-layout/app-header/div[2]/div/app-login-page/div/div[2]/form/div[3]/button")));
 		login_click.click();
 	}
-	@Then("The user should not have an admin panel to access and update other users roles")
-	public void The_user_should_not_have_an_admin_panel_ro_access_update_other_users_roles() {
-		try {
-			
-			WebElement adminPortal = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("/html/body/app-root/app-layout/app-header/header/nav/div/div/ul/li[8]/a")));
-			Assert.assertTrue(false);
-		} catch (Exception e) {
-			Assert.assertTrue(true);
-		}
+	@When("The admin clicks on the username option and accesses My Profile page")
+	public void The_admin_clicks_on_the_username_option_and_accesses_My_Profile_page() {
+
+		WebElement username_options = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+				"/html/body/app-root/app-layout/app-header/header/nav/div/div/div/ul/li/a")));
+		Select username_options_select = new Select(username_options);
+		
+		username_options_select.selectByIndex(0);
+		
 	}
+	@Then("The system shouldn't display the Resources category")
+	public void The_system_shouldnt_display_the_Resources_category(){
 	
+		WebElement resources = wait.until(ExpectedConditions.elementToBeClickable(By.name("Resources")));
+		Assert.assertFalse(resources.isDisplayed());
+}
 }

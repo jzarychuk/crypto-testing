@@ -23,8 +23,8 @@ import java.util.Collections;
 
 public class FileEncryptionAndDecryptionTest {
 
-	private WebDriver browser = new ChromeDriver();
-	private WebDriverWait wait = new WebDriverWait(browser, null);
+	private WebDriver browser;
+	private WebDriverWait wait;
 	private String key;
 
 	@Before
@@ -35,7 +35,10 @@ public class FileEncryptionAndDecryptionTest {
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 		chromeOptions.setExperimentalOption("useAutomationExtension", false);
-		chromeOptions.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation")); 
+		chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+		chromeOptions.addArguments("disable-infobars");
+		chromeOptions.addArguments("--disable-notifications");
+		chromeOptions.addArguments("--disable-popup-blocking");
 		// Initialize the WebDriver with ChromeDriver and the defined options
 		browser = new ChromeDriver(chromeOptions);
 		// Maximize the browser window
@@ -55,10 +58,11 @@ public class FileEncryptionAndDecryptionTest {
 	}
 
 	@When("The user clicks on login button")
-	public void the_user_clisk_on_the_login_button() {
+	public void the_user_clisk_on_the_login_button() throws InterruptedException {
+		Thread.sleep(2000);
 		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("/html/body/app-root/app-layout/app-header/header/nav/div/div/div/a[2]")));
-		login.click();
+				By.cssSelector("#collapsibleNavId > div > a.btn.fs-14.btn-outline-secondary.me-2.my-2.my-sm-0.ng-star-inserted")));
+		((JavascriptExecutor) browser).executeScript("arguments[0].click();", login);
 	}
 
 	@When("The user logs in using their email address and password")
@@ -66,7 +70,7 @@ public class FileEncryptionAndDecryptionTest {
 
 		String email = AccountCreationAndApprovalTest.email_temp;
 		String password = AccountCreationAndApprovalTest.password_temp;
-		
+
 		WebElement email_box = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/app-header/div[2]/div/app-login-page/div/div[2]/form/div[1]/input")));
 		email_box.click();
@@ -83,17 +87,19 @@ public class FileEncryptionAndDecryptionTest {
 	}
 
 	@When("The user cliks on the Try Encryption button on homepage")
-	public void user_clicks_try_encryption() {
+	public void user_clicks_try_encryption() throws InterruptedException {
+		Thread.sleep(2000);
 		WebElement encryption_button = wait.until(ExpectedConditions.elementToBeClickable(
 				By.xpath("/html/body/app-root/app-layout/div/app-home/div[1]/div[1]/div/div/div[1]/div/div/a[1]")));
-		encryption_button.click();
+		((JavascriptExecutor) browser).executeScript("arguments[0].click();", encryption_button);
 	}
 
 	@When("The user cliks on Choose File button and selects a files to upload")
-	public void user_selects_a_file_to_upload() throws InterruptedException, AWTException {
-		WebElement choose_file_button = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-				"/html/body/app-root/app-layout/div/app-encryption/div/div/div/div[1]/form/div/div[2]/div/p-fileupload/div/div[1]/span")));
-		choose_file_button.sendKeys("\"C:\\Users\\basha\\Downloads\\joins-sql.png\"");
+	public void user_selects_a_file_to_upload() throws InterruptedException {
+		Thread.sleep(2000);
+		WebElement choose_file_button = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
+				"body > app-root > app-layout > div > app-encryption > div > div > div > div:nth-child(1) > form > div > div.card-body > div > p-fileupload > div > div.p-fileupload-buttonbar > span")));
+		choose_file_button.sendKeys("C:\\Users\\basha\\Downloads\\joins-sql.png");
 
 	}
 
@@ -134,10 +140,11 @@ public class FileEncryptionAndDecryptionTest {
 	// Scenario: User wants to decrypt an uploaded file
 
 	@When("The user cliks on the Try Decryption button on homepage")
-	public void The_user_cliks_on_the_Try_Decryption_button_on_homepage() {
+	public void The_user_cliks_on_the_Try_Decryption_button_on_homepage() throws InterruptedException {
+		Thread.sleep(2000);
 		WebElement decryption_button = wait.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("/html/body/app-root/app-layout/div/app-home/div[1]/div[1]/div/div/div[1]/div/div/a[2]")));
-		decryption_button.click();
+				By.cssSelector("body > app-root > app-layout > div > app-home > div.home > div.land.d-flex.align-items-center > div > div > div.col-md-7.d-flex.align-items-center > div > div > a:nth-child(2)")));
+		((JavascriptExecutor) browser).executeScript("arguments[0].click();", decryption_button);
 	}
 
 	@When("The user selects encryption type, and inputs the key used for encryption")

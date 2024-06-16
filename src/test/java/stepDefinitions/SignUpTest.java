@@ -43,6 +43,9 @@ public class SignUpTest {
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 		chromeOptions.setExperimentalOption("useAutomationExtension", false);
 		chromeOptions.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation")); 
+        chromeOptions.addArguments("disable-infobars");
+        chromeOptions.addArguments("--disable-notifications");
+        chromeOptions.addArguments("--disable-popup-blocking");
         // Initialize the WebDriver with ChromeDriver and the defined options
         driver = new ChromeDriver(chromeOptions);
         // Maximize the browser window

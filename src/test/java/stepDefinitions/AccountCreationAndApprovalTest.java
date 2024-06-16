@@ -23,9 +23,8 @@ import org.testng.Assert;
 
 public class AccountCreationAndApprovalTest {
 
-	private WebDriver browser = new ChromeDriver();
-	
-	private WebDriverWait wait = new WebDriverWait(browser, null);
+	private WebDriver browser;
+	private WebDriverWait wait;
 	
     private static final Faker faker = new Faker();
     
@@ -48,6 +47,9 @@ public class AccountCreationAndApprovalTest {
 		chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 		chromeOptions.setExperimentalOption("useAutomationExtension", false);
 		chromeOptions.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation")); 
+        chromeOptions.addArguments("disable-infobars");
+        chromeOptions.addArguments("--disable-notifications");
+        chromeOptions.addArguments("--disable-popup-blocking");
 		// Initialize the WebDriver with ChromeDriver and the defined options
 		browser = new ChromeDriver(chromeOptions);
 		// Maximize the browser window
@@ -135,8 +137,8 @@ public class AccountCreationAndApprovalTest {
 	@When("The admin clicks on login button")
 	public void Admin_clicks_on_login_button_to_approve_a_user() {
 		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("/html/body/app-root/app-layout/app-header/header/nav/div/div/div/a[2]")));
-		login.click();
+				By.cssSelector("#collapsibleNavId > div > a.btn.fs-14.btn-outline-secondary.me-2.my-2.my-sm-0.ng-star-inserted")));
+		((JavascriptExecutor) browser).executeScript("arguments[0].click();", login);
 	}
 	@When("The admin inputs their correct email address and password")
 	public void Admin_logins_with_email_and_password_to_approve_a_user() {
@@ -144,10 +146,6 @@ public class AccountCreationAndApprovalTest {
 		String admin_email = "admin@uranus.com";
 		String admin_password = "g8rD%+";
 		
-		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("/html/body/app-root/app-layout/app-header/header/nav/div/div/div/a[2]")));
-		login.click();
-
 		WebElement email_box = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/app-header/div[2]/div/app-login-page/div/div[2]/form/div[1]/input")));
 		email_box.click();
@@ -195,16 +193,12 @@ public class AccountCreationAndApprovalTest {
 	public void User_clicks_on_log_in() {
 
 		WebElement login_button = wait.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("/html/body/app-root/app-layout/app-header/header/nav/div/div/div/a[2]")));
-		login_button.click();
+				By.cssSelector("#collapsibleNavId > div > a.btn.fs-14.btn-outline-secondary.me-2.my-2.my-sm-0.ng-star-inserted")));
+		((JavascriptExecutor) browser).executeScript("arguments[0].click();", login_button);
 		
 	}
 	@When("The user logins with correct email address and password")
 	public void The_user_logins_with_correct_email_address_and_password() {
-
-		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("/html/body/app-root/app-layout/app-header/header/nav/div/div/div/a[2]")));
-		login.click();
 
 		WebElement email_box = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/app-header/div[2]/div/app-login-page/div/div[2]/form/div[1]/input")));
@@ -233,10 +227,6 @@ public class AccountCreationAndApprovalTest {
 	@When("The user logins with incorrect email address and correct password")
 	public void The_user_logins_with_incorrect_email_address_and_correct_password() {
 		
-		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("/html/body/app-root/app-layout/app-header/header/nav/div/div/div/a[2]")));
-		login.click();
-
 		WebElement email_box = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/app-header/div[2]/div/app-login-page/div/div[2]/form/div[1]/input")));
 		email_box.click();
@@ -256,17 +246,13 @@ public class AccountCreationAndApprovalTest {
 	@Then("The user should not be signed in and presented with an error message")
 	public void The_user_should_not_be_signed_and_presented_with_an_error_message()
 	{
-        WebElement successMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("body > app-root > app-layout > div > p-toast > div > p-toastitem > div > div > div > div.p-toast-summary.ng-tns-c53-6")));
+        WebElement successMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("body > app-root > app-layout > div > p-toast > div > p-toastitem > div > div > div > div.p-toast-detail.ng-tns-c53-7")));
         Assert.assertTrue(successMessage.isDisplayed());
 	}
 	
 	//User tries to sign in with incorrect password
 	@When("The user logins with correct email address and incorrect password")
 	public void The_user_logins_with_correct_email_address_and_incorrect_password() {
-		
-		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("/html/body/app-root/app-layout/app-header/header/nav/div/div/div/a[2]")));
-		login.click();
 
 		WebElement email_box = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/app-header/div[2]/div/app-login-page/div/div[2]/form/div[1]/input")));
