@@ -33,11 +33,6 @@ public class FileVisibilityTest {
 		// Define Chrome options for the browser
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-		chromeOptions.setExperimentalOption("useAutomationExtension", false);
-		chromeOptions.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation")); 
-        chromeOptions.addArguments("disable-infobars");
-        chromeOptions.addArguments("--disable-notifications");
-        chromeOptions.addArguments("--disable-popup-blocking");
 		// Initialize the WebDriver with ChromeDriver and the defined options
 		browser = new ChromeDriver(chromeOptions);
 		// Maximize the browser window
@@ -63,7 +58,7 @@ public class FileVisibilityTest {
 	public void Admin_clicks_on_login_button() {
 
 		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(
-				By.cssSelector("#collapsibleNavId > div > a.btn.fs-14.btn-outline-secondary.me-2.my-2.my-sm-0.ng-star-inserted")));
+				By.cssSelector(".btn-outline-secondary")));
 		((JavascriptExecutor) browser).executeScript("arguments[0].click();", login);
 	}
 	@When("The admin logins with email and password")

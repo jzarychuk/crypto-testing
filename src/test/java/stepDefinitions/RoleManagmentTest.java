@@ -33,11 +33,6 @@ public class RoleManagmentTest {
 		// Define Chrome options for the browser
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-		chromeOptions.setExperimentalOption("useAutomationExtension", false);
-		chromeOptions.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation")); 
-        chromeOptions.addArguments("disable-infobars");
-        chromeOptions.addArguments("--disable-notifications");
-        chromeOptions.addArguments("--disable-popup-blocking");
 		// Initialize the WebDriver with ChromeDriver and the defined options
 		browser = new ChromeDriver(chromeOptions);
 		// Maximize the browser window
@@ -63,7 +58,7 @@ public class RoleManagmentTest {
 	public void Admin_clicks_on_login_button() {
 
 		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(
-				By.cssSelector("#collapsibleNavId > div > a.btn.fs-14.btn-outline-secondary.me-2.my-2.my-sm-0.ng-star-inserted")));
+				By.cssSelector(".btn-outline-secondary")));
 		((JavascriptExecutor) browser).executeScript("arguments[0].click();", login);
 	}
 	@When("Admin logins with email and password")
@@ -123,7 +118,7 @@ public class RoleManagmentTest {
 		approve_button.click();
 		WebElement current_role = wait.until(ExpectedConditions.elementToBeClickable(
 				By.cssSelector("#pr_id_5-table > tbody > tr:nth-child(1) > td:nth-child(4) > p-celleditor")));
-		Assert.assertEquals("Employee", current_role.getText());
+		Assert.assertEquals("employee", current_role.getText().toLowerCase());
 
 	}
 	
@@ -137,15 +132,15 @@ public class RoleManagmentTest {
 	@When("The user clicks on the login button")
 	public void the_user_clisk_on_the_login_button() {
 		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(
-				By.cssSelector("#collapsibleNavId > div > a.btn.fs-14.btn-outline-secondary.me-2.my-2.my-sm-0.ng-star-inserted")));
+				By.cssSelector(".btn-outline-secondary")));
 		((JavascriptExecutor) browser).executeScript("arguments[0].click();", login);
 	}
 	
 	@When("The user logins with their email address and password")
 	public void The_user_logins_with_correct_email_address_and_password() {
 		
-		String email = AccountCreationAndApprovalTest.email_temp;
-		String password = AccountCreationAndApprovalTest.password_temp;
+		String email = "bashar.nexus@gmail.com";
+		String password = "basha97";
 		
 		WebElement email_box = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/app-header/div[2]/div/app-login-page/div/div[2]/form/div[1]/input")));

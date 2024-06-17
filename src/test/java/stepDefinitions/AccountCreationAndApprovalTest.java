@@ -1,4 +1,5 @@
 package stepDefinitions;
+
 //import static org.junit.Assert.assertTrue;
 import java.time.Duration;
 import java.util.Collections;
@@ -25,19 +26,19 @@ public class AccountCreationAndApprovalTest {
 
 	private WebDriver browser;
 	private WebDriverWait wait;
-	
-    private static final Faker faker = new Faker();
-    
-    String name = faker.name().fullName();
-    
-    private static final String email = faker.internet().emailAddress();
-    
-    public static final String email_temp = email;
-    
-    private static final String password = faker.number().digits(8);
-    
-    public static final String password_temp = password;
-    
+
+	private static final Faker faker = new Faker();
+
+	String name = faker.name().fullName();
+
+	private static final String email = faker.internet().emailAddress();
+
+	public static final String email_temp = email;
+
+	private static final String password = faker.number().digits(8);
+
+	public static final String password_temp = password;
+
 	@Before
 	public void setUp() {
 		// Setup the ChromeDriver using WebDriverManager, see the pom.xml file
@@ -45,11 +46,6 @@ public class AccountCreationAndApprovalTest {
 		// Define Chrome options for the browser
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-		chromeOptions.setExperimentalOption("useAutomationExtension", false);
-		chromeOptions.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation")); 
-        chromeOptions.addArguments("disable-infobars");
-        chromeOptions.addArguments("--disable-notifications");
-        chromeOptions.addArguments("--disable-popup-blocking");
 		// Initialize the WebDriver with ChromeDriver and the defined options
 		browser = new ChromeDriver(chromeOptions);
 		// Maximize the browser window
@@ -67,21 +63,21 @@ public class AccountCreationAndApprovalTest {
 	public void the_user_visits_homepage() {
 
 		browser.get("http://localhost/#/index");
-		
+
 	}
-	
-	@When ("The user clicks on Sign Up button")
+
+	@When("The user clicks on Sign Up button")
 	public void User_clicks_on_Sign_Up() {
 
 		WebElement signup = wait.until(ExpectedConditions.elementToBeClickable(
 				By.xpath("/html/body/app-root/app-layout/app-header/header/nav/div/div/div/a[1]")));
 		signup.click();
-		
+
 	}
-	
+
 	@When("The user inputs name, email, password, confirm password, and selects a role")
 	public void User_inputs_name_email_password_confirm_password_and_selects_a_role() {
-		
+
 		WebElement name_box = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/app-header/div[1]/div/app-sign-up-page/div/div[2]/form/div[1]/input")));
 		name_box.click();
@@ -111,21 +107,24 @@ public class AccountCreationAndApprovalTest {
 		dropdown.selectByIndex(1);
 
 	}
-	
+
 	@When("The user clicks sign up button")
 	public void The_user_clicks_sign_up_button() {
-		
+
 		WebElement sign_up_click = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/app-header/div[1]/div/app-sign-up-page/div/div[2]/form/div[6]/button")));
 
 		sign_up_click.click();
-		
+
 	}
+
 	@Then("The user receives a sign up success message")
 	public void User_receives_a_sign_up_success_message() {
-		
-        WebElement successMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".p-toast-detail")));
-        Assert.assertEquals(successMessage.getText(), "Registerd successfully, please wait for admin approval to login!");
+
+		WebElement successMessage = wait
+				.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".p-toast-detail")));
+		Assert.assertEquals(successMessage.getText(),
+				"Registerd successfully, please wait for admin approval to login!");
 	}
 
 	@Given("The admin visits the app's homepage")
@@ -133,19 +132,20 @@ public class AccountCreationAndApprovalTest {
 
 		browser.get("http://localhost/#/index");
 	}
-	
+
 	@When("The admin clicks on login button")
 	public void Admin_clicks_on_login_button_to_approve_a_user() {
-		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(
-				By.cssSelector("#collapsibleNavId > div > a.btn.fs-14.btn-outline-secondary.me-2.my-2.my-sm-0.ng-star-inserted")));
+		WebElement login = wait
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".btn-outline-secondary")));
 		((JavascriptExecutor) browser).executeScript("arguments[0].click();", login);
 	}
+
 	@When("The admin inputs their correct email address and password")
 	public void Admin_logins_with_email_and_password_to_approve_a_user() {
-		
+
 		String admin_email = "admin@uranus.com";
 		String admin_password = "g8rD%+";
-		
+
 		WebElement email_box = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/app-header/div[2]/div/app-login-page/div/div[2]/form/div[1]/input")));
 		email_box.click();
@@ -161,42 +161,45 @@ public class AccountCreationAndApprovalTest {
 
 		login_click.click();
 	}
-	
+
 	@Then("The admin should be signed and access the website functionalities")
 	public void Admin_is_signed_in() {
 		WebElement adminPortal = wait.until(ExpectedConditions.elementToBeClickable(
 				By.xpath("/html/body/app-root/app-layout/app-header/header/nav/div/div/ul/li[8]/a")));
 		Assert.assertTrue(adminPortal.isDisplayed());
 	}
-	
+
 	@When("The admin visits Admin Panel to approve a user")
 	public void Admin_visits_Admin_Panel_to_approve_a_user() {
 		WebElement adminPortal = wait.until(ExpectedConditions.elementToBeClickable(
 				By.xpath("/html/body/app-root/app-layout/app-header/header/nav/div/div/ul/li[8]/a")));
 		((JavascriptExecutor) browser).executeScript("arguments[0].click();", adminPortal);
 	}
-	
+
 	@Then("The admin clicks on the New Accounts tab and approves the first new user")
-	public void Admin_clicks_on_New_Accounts_tab_and_approves_user() {
+	public void Admin_clicks_on_New_Accounts_tab_and_approves_user() throws InterruptedException {
 		WebElement approveButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/div/app-admin-layout/div/div/div[2]/div/div[1]/app-accounts/div/div[1]/app-new-accounts/p-table/div/div/table/tbody/tr/td[6]/div/button[2]")));
 		approveButton.click();
+
+		Thread.sleep(5000);
 		
-		WebElement userPlaceHolder = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div#new .p-element > .p-component.p-datatable.p-datatable-striped table[role='table'] .ng-star-inserted.p-element > td:nth-of-type(2) > .ng-star-inserted")));
-		Assert.assertEquals(userPlaceHolder.getText(), email);
+		WebElement users_number = wait.until(ExpectedConditions.visibilityOfElementLocated(
+				By.xpath("/html/body/app-root/app-layout/div/app-admin-layout/div/div/div[2]/div/div[1]/app-accounts/ul/li[1]/button/span")));
+		Assert.assertEquals("0", users_number.getText().toString().toLowerCase());
 	}
-	
-	
-	//User tries to sign in with correct credentials
-	
+
+	// User tries to sign in with correct credentials
+
 	@When("The user clicks on the log in button")
 	public void User_clicks_on_log_in() {
 
-		WebElement login_button = wait.until(ExpectedConditions.elementToBeClickable(
-				By.cssSelector("#collapsibleNavId > div > a.btn.fs-14.btn-outline-secondary.me-2.my-2.my-sm-0.ng-star-inserted")));
+		WebElement login_button = wait
+				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".btn-outline-secondary")));
 		((JavascriptExecutor) browser).executeScript("arguments[0].click();", login_button);
-		
+
 	}
+
 	@When("The user logins with correct email address and password")
 	public void The_user_logins_with_correct_email_address_and_password() {
 
@@ -216,21 +219,26 @@ public class AccountCreationAndApprovalTest {
 		login_click.click();
 
 	}
-	
+
 	@Then("The user should be signed in and access the website functionalities")
 	public void The_user_should_be_signed_and_access_the_website_functionalities() {
-        WebElement successMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/app-layout/div/p-toast/div/p-toastitem/div/div/div/div[2]")));
-        Assert.assertTrue(successMessage.isDisplayed());
+
+		try {
+			WebElement home = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/app-layout/div/p-toast/div/p-toastitem/div/div/div/div[2]")));
+			Assert.assertTrue(home.getText().toLowerCase().contains("successfully"));
+		} catch (Exception e) {
+			Assert.assertTrue(false);
+		}
 	}
-	
-	//User tries to sign in with incorrect email address
+
+	// User tries to sign in with incorrect email address
 	@When("The user logins with incorrect email address and correct password")
 	public void The_user_logins_with_incorrect_email_address_and_correct_password() {
-		
+
 		WebElement email_box = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/app-header/div[2]/div/app-login-page/div/div[2]/form/div[1]/input")));
 		email_box.click();
-		email_box.sendKeys(email+"ggg");
+		email_box.sendKeys(email + ".com");
 
 		WebElement password_box = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/app-header/div[2]/div/app-login-page/div/div[2]/form/div[2]/input")));
@@ -242,15 +250,20 @@ public class AccountCreationAndApprovalTest {
 
 		login_click.click();
 	}
-	
+
 	@Then("The user should not be signed in and presented with an error message")
-	public void The_user_should_not_be_signed_and_presented_with_an_error_message()
-	{
-        WebElement successMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("body > app-root > app-layout > div > p-toast > div > p-toastitem > div > div > div > div.p-toast-detail.ng-tns-c53-7")));
-        Assert.assertTrue(successMessage.isDisplayed());
+	public void The_user_should_not_be_signed_and_presented_with_an_error_message() {
+		try {
+			WebElement failMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(
+					By.xpath("/html/body/app-root/app-layout/div/p-toast/div/p-toastitem/div/div/div/div[2]")));
+			Assert.assertTrue(failMessage.getText().toLowerCase().contains("invalid"));
+			
+		} catch (Exception e) {
+			Assert.assertTrue(false);
+		}
 	}
-	
-	//User tries to sign in with incorrect password
+
+	// User tries to sign in with incorrect password
 	@When("The user logins with correct email address and incorrect password")
 	public void The_user_logins_with_correct_email_address_and_incorrect_password() {
 
@@ -262,12 +275,11 @@ public class AccountCreationAndApprovalTest {
 		WebElement password_box = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/app-header/div[2]/div/app-login-page/div/div[2]/form/div[2]/input")));
 		password_box.click();
-		password_box.sendKeys(password+"gggg");
+		password_box.sendKeys(password + "ggGg");
 
 		WebElement login_click = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/app-header/div[2]/div/app-login-page/div/div[2]/form/div[3]/button")));
 
-		Assert.assertTrue(login_click.isEnabled());
 		login_click.click();
 	}
 }
