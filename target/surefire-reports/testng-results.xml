@@ -1,76 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-17T00:10:10 PDT" name="Surefire suite" finished-at="2024-06-17T00:10:54 PDT" duration-ms="43588">
+  <suite started-at="2024-06-17T23:47:35 PDT" name="Surefire suite" finished-at="2024-06-17T23:48:23 PDT" duration-ms="47161">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cuccumbersOptions.TestNGRunner@ae13544]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cuccumbersOptions.TestNGRunner@3d34d211]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-06-17T00:10:10 PDT" name="Surefire test" finished-at="2024-06-17T00:10:54 PDT" duration-ms="43588">
+    <test started-at="2024-06-17T23:47:35 PDT" name="Surefire test" finished-at="2024-06-17T23:48:23 PDT" duration-ms="47161">
       <class name="cuccumbersOptions.TestNGRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cuccumbersOptions.TestNGRunner@ae13544]" started-at="2024-06-17T00:10:10 PDT" name="setUpClass" finished-at="2024-06-17T00:10:11 PDT" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cuccumbersOptions.TestNGRunner@3d34d211]" started-at="2024-06-17T23:47:35 PDT" name="setUpClass" finished-at="2024-06-17T23:47:36 PDT" duration-ms="405" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@455cb6d9]]>
+                <![CDATA[org.testng.TestRunner@2396dc4e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cuccumbersOptions.TestNGRunner@ae13544]" started-at="2024-06-17T00:10:11 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T00:10:18 PDT" duration-ms="7487" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cuccumbersOptions.TestNGRunner@3d34d211]" started-at="2024-06-17T23:47:36 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T23:47:45 PDT" duration-ms="9117" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Admin changes the role of a registered user"]]>
+                <![CDATA["Admin uploads a files to the app for saving"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Role Managment Test"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [user] but found [employee]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [user] but found [employee]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at stepDefinitions.RoleManagmentTest.Admin_changes_the_first_user_role_to_Employee(RoleManagmentTest.java:121)
-at ✽.Admin changes the first user role to Employee(file:///C:/Users/basha/Downloads/crypto-testing/src/test/java/features/RoleManagmentTest.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cuccumbersOptions.TestNGRunner@ae13544]" started-at="2024-06-17T00:10:18 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T00:10:54 PDT" duration-ms="35758" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User changes the role of another registered user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Role Managment Test"]]>
+                <![CDATA["File Visibility (Admin)"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cuccumbersOptions.TestNGRunner@ae13544]" started-at="2024-06-17T00:10:54 PDT" name="tearDownClass" finished-at="2024-06-17T00:10:54 PDT" duration-ms="21" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cuccumbersOptions.TestNGRunner@3d34d211]" started-at="2024-06-17T23:47:45 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T23:48:22 PDT" duration-ms="37566" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin checks if the uploaded file is visible to users"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["File Visibility (Admin)"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cuccumbersOptions.TestNGRunner@3d34d211]" started-at="2024-06-17T23:48:22 PDT" name="tearDownClass" finished-at="2024-06-17T23:48:23 PDT" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -1,15 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 43.89 s <<< FAILURE! -- in TestSuite
-cuccumbersOptions.TestNGRunner.runScenario["Admin changes the role of a registered user", "Role Managment Test"](1) -- Time elapsed: 7.497 s <<< FAILURE!
-java.lang.AssertionError: expected [user] but found [employee]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at stepDefinitions.RoleManagmentTest.Admin_changes_the_first_user_role_to_Employee(RoleManagmentTest.java:121)
-	at ✽.Admin changes the first user role to Employee(file:///C:/Users/basha/Downloads/crypto-testing/src/test/java/features/RoleManagmentTest.feature:9)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.62 s -- in TestSuite
