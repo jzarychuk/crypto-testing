@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="47.617" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="32.461" tests="3" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\basha\AppData\Local\Temp\surefire13924854660540386483\surefirebooter-20240617234735036_3.jar C:\Users\basha\AppData\Local\Temp\surefire13924854660540386483 2024-06-17T23-47-34_846-jvmRun1 surefire-20240617234735036_1tmp surefire_0-20240617234735036_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\basha\AppData\Local\Temp\surefire12109801144943492019\surefirebooter-20240618085755404_3.jar C:\Users\basha\AppData\Local\Temp\surefire12109801144943492019 2024-06-18T08-57-55_306-jvmRun1 surefire-20240618085755404_1tmp surefire_0-20240618085755404_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\basha\Downloads\crypto-testing\target\test-classes;C:\Users\basha\Downloads\crypto-testing\target\classes;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\basha\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\basha\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\basha\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\basha\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\basha\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\basha\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\basha\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\basha\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\basha\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\basha\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\basha\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\basha\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\basha\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\basha\.m2\repository\io\cucumber\query\12.1.2\query-12.1.2.jar;C:\Users\basha\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\basha\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\basha\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\basha\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\basha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-testng\7.18.0\cucumber-testng-7.18.0.jar;C:\Users\basha\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\basha\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\basha\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\basha\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\basha\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\basha\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\basha\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\basha\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\basha\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\basha\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\basha\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\basha\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\basha\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\basha\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\basha\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\basha\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\basha\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\basha\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\basha\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\basha\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\basha\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\basha\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\basha\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\basha\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\basha\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\basha\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\basha\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\basha\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\basha\AppData\Local\Temp\surefire13924854660540386483\surefirebooter-20240617234735036_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\basha\AppData\Local\Temp\surefire12109801144943492019\surefirebooter-20240618085755404_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
@@ -60,124 +60,207 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Admin uploads a files to the app for saving&quot;, &quot;File Visibility (Admin)&quot;](1)" classname="cuccumbersOptions.TestNGRunner" time="9.12">
+  <testcase name="runScenario[&quot;User wants to encrypt an uploaded file&quot;, &quot;Role Managment Test&quot;](1)" classname="cuccumbersOptions.TestNGRunner" time="7.275">
     <system-out><![CDATA[
-Scenario: Admin uploads a files to the app for saving                    # src/test/java/features/FileVisibilityTest.feature:3
-23:47:36.635 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-23:47:36.979 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 00:33:28 18/06/2024 PDT)
-23:47:36.980 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
-23:47:36.981 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
-23:47:37.029 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
-23:47:37.030 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
-23:47:38.057 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-23:47:38.068 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 00:33:28 18/06/2024 PDT)
-23:47:38.069 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
-23:47:38.069 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
-23:47:38.076 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
-23:47:38.078 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
-23:47:38.747 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-23:47:38.760 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 00:33:28 18/06/2024 PDT)
-23:47:38.761 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
-23:47:38.761 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
-23:47:38.770 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
-23:47:38.771 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
-23:47:39.479 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-23:47:39.491 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 00:33:28 18/06/2024 PDT)
-23:47:39.491 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
-23:47:39.491 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
-23:47:39.498 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
-23:47:39.500 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
-23:47:40.257 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-23:47:40.271 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 00:33:28 18/06/2024 PDT)
-23:47:40.272 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
-23:47:40.273 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
-23:47:40.287 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
-23:47:40.288 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
-23:47:41.056 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-23:47:41.069 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 00:33:28 18/06/2024 PDT)
-23:47:41.070 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
-23:47:41.070 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
-23:47:41.079 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
-23:47:41.080 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
-  Given The admin visits the homepage                                    # stepDefinitions.FileVisibilityTest.Admin_visits_homepage()
-  When The admin presses the login button                                # stepDefinitions.FileVisibilityTest.Admin_clicks_on_login_button()
-  When The admin logins with email and password                          # stepDefinitions.FileVisibilityTest.Admin_logins_with_emailand_password()
-  When The admin clicks on the Admin Panel tab                           # stepDefinitions.FileVisibilityTest.Admin_visits_Admin_Panel()
-  When The admin clicks on the Resources category                        # stepDefinitions.FileVisibilityTest.The_admin_clicks_on_the_Resources_category()
-  When The admin clicks on the Choose button to select a file for upload # stepDefinitions.FileVisibilityTest.The_admin_clicks_on_the_Choose_button_to_select_a_file_for_upload()
-  When The admin clicks the Upload button                                # stepDefinitions.FileVisibilityTest.The_admin_clicks_the_Upload_button()
-  Then The file is uploaded to the app                                   # stepDefinitions.FileVisibilityTest.The_file_is_uploaded_to_the_app()
+Scenario: User wants to encrypt an uploaded file                                         # src/test/java/features/FileEncryptionAndDecryptionTest.feature:3
+08:57:56.468 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:57:56.691 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:57:56.691 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:57:56.692 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:57:56.720 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:57:56.721 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:57:57.515 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:57:57.521 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:57:57.521 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:57:57.521 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:57:57.527 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:57:57.528 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:57:58.092 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:57:58.099 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:57:58.100 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:57:58.100 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:57:58.105 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:57:58.106 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:57:58.688 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:57:58.694 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:57:58.695 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:57:58.695 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:57:58.699 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:57:58.700 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:57:59.263 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:57:59.271 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:57:59.271 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:57:59.271 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:57:59.275 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:57:59.276 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:57:59.888 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:57:59.894 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:57:59.895 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:57:59.895 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:57:59.900 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:57:59.901 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+  Given The user visits the app's homepage                                               # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_visits_the_homepage()
+  When The user clicks on login button                                                   # stepDefinitions.FileEncryptionAndDecryptionTest.the_user_clisk_on_the_login_button()
+  When The user logs in using their email address and password                           # stepDefinitions.FileEncryptionAndDecryptionTest.the_user_logins_with_correct_email_address_and_password()
+  When The user cliks on the Try Encryption button on homepage                           # stepDefinitions.FileEncryptionAndDecryptionTest.user_clicks_try_encryption()
+  When The user cliks on Choose File button and selects a files to upload for Encryption # stepDefinitions.FileEncryptionAndDecryptionTest.user_selects_a_file_to_upload_for_Encryption()
+  When The user selects encryption type, and auto generate encryptio key                 # stepDefinitions.FileEncryptionAndDecryptionTest.user_selects_enryptio_type()
+  Then The user clicks the Encrypt button to encrypt the file                            # stepDefinitions.FileEncryptionAndDecryptionTest.user_clicks_enrypt_and_recieves_encrypted_file()
 ]]></system-out>
-    <system-err><![CDATA[Jun 17, 2024 11:47:38 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 18, 2024 8:57:57 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 17, 2024 11:47:38 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 18, 2024 8:57:58 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 17, 2024 11:47:39 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 18, 2024 8:57:58 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 17, 2024 11:47:40 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 18, 2024 8:57:59 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 17, 2024 11:47:40 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 18, 2024 8:57:59 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 17, 2024 11:47:41 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 18, 2024 8:58:00 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Admin checks if the uploaded file is visible to users&quot;, &quot;File Visibility (Admin)&quot;](2)" classname="cuccumbersOptions.TestNGRunner" time="37.564">
+  <testcase name="runScenario[&quot;User wants to decrypt an uploaded file&quot;, &quot;Role Managment Test&quot;](2)" classname="cuccumbersOptions.TestNGRunner" time="12.259">
+    <failure message="expected [ready] but found [finished]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [ready] but found [finished]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.FileEncryptionAndDecryptionTest.The_user_clicks_the_Decrypt_button_to_encrypt_the_file_1(FileEncryptionAndDecryptionTest.java:195)
+	at ✽.The user clicks the Decrypt button to decrypt the file correctly(file:///C:/Users/basha/Downloads/crypto-testing/src/test/java/features/FileEncryptionAndDecryptionTest.feature:19)
+]]></failure>
     <system-out><![CDATA[
-Scenario: Admin checks if the uploaded file is visible to users             # src/test/java/features/FileVisibilityTest.feature:13
-23:47:45.421 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-23:47:45.437 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 00:33:28 18/06/2024 PDT)
-23:47:45.438 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
-23:47:45.438 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
-23:47:45.451 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
-23:47:45.452 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
-23:47:46.150 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-23:47:46.165 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 00:33:28 18/06/2024 PDT)
-23:47:46.166 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
-23:47:46.167 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
-23:47:46.178 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
-23:47:46.179 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
-23:47:46.859 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-23:47:46.874 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 00:33:28 18/06/2024 PDT)
-23:47:46.875 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
-23:47:46.876 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
-23:47:46.889 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
-23:47:46.890 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
-23:47:47.576 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-23:47:47.590 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 00:33:28 18/06/2024 PDT)
-23:47:47.592 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
-23:47:47.592 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
-23:47:47.604 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
-23:47:47.605 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
-23:47:48.304 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-23:47:48.320 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 00:33:28 18/06/2024 PDT)
-23:47:48.321 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
-23:47:48.321 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
-23:47:48.335 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
-23:47:48.337 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
-23:47:49.065 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-23:47:49.081 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 00:33:28 18/06/2024 PDT)
-23:47:49.082 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
-23:47:49.082 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
-23:47:49.095 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
-23:47:49.096 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
-  Given The admin visits the homepage                                       # stepDefinitions.FileVisibilityTest.Admin_visits_homepage()
-  When The admin presses the login button                                   # stepDefinitions.FileVisibilityTest.Admin_clicks_on_login_button()
-  When The admin logins as user with email and password                     # stepDefinitions.FileVisibilityTest.The_admin_logins_as_user_with_email_and_password()
-  When The admin clicks on the username option and accesses My Profile page # stepDefinitions.FileVisibilityTest.The_admin_clicks_on_the_username_option_and_accesses_My_Profile_page()
-  Then The system shouldn't display the Resources category                  # stepDefinitions.FileVisibilityTest.The_system_shouldnt_display_the_Resources_category()
+Scenario: User wants to decrypt an uploaded file                                         # src/test/java/features/FileEncryptionAndDecryptionTest.feature:12
+08:58:03.534 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:58:03.539 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:58:03.539 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:58:03.539 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:58:03.544 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:58:03.544 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:58:04.114 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:58:04.120 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:58:04.121 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:58:04.121 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:58:04.125 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:58:04.126 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:58:04.705 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:58:04.711 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:58:04.712 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:58:04.712 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:58:04.715 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:58:04.716 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:58:05.298 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:58:05.304 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:58:05.304 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:58:05.304 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:58:05.308 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:58:05.308 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:58:05.878 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:58:05.885 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:58:05.885 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:58:05.885 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:58:05.889 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:58:05.889 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:58:06.553 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:58:06.559 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:58:06.559 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:58:06.560 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:58:06.563 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:58:06.564 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+  Given The user visits the app's homepage                                               # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_visits_the_homepage()
+  When The user clicks on login button                                                   # stepDefinitions.FileEncryptionAndDecryptionTest.the_user_clisk_on_the_login_button()
+  When The user logs in using their email address and password                           # stepDefinitions.FileEncryptionAndDecryptionTest.the_user_logins_with_correct_email_address_and_password()
+  When The user cliks on the Try Decryption button on homepage                           # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_cliks_on_the_Try_Decryption_button_on_homepage()
+  When The user cliks on Choose File button and selects a files to upload for Decryption # stepDefinitions.FileEncryptionAndDecryptionTest.user_selects_a_file_to_upload_for_Decryption()
+  When The user selects encryption type, and inputs the key used for encryption          # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_selects_encryption_type_and_inputs_the_key_used_for_encryption()
+  Then The user clicks the Decrypt button to decrypt the file correctly                  # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_clicks_the_Decrypt_button_to_encrypt_the_file_1()
+      java.lang.AssertionError: expected [ready] but found [finished]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.FileEncryptionAndDecryptionTest.The_user_clicks_the_Decrypt_button_to_encrypt_the_file_1(FileEncryptionAndDecryptionTest.java:195)
+	at ✽.The user clicks the Decrypt button to decrypt the file correctly(file:///C:/Users/basha/Downloads/crypto-testing/src/test/java/features/FileEncryptionAndDecryptionTest.feature:19)
+
 ]]></system-out>
-    <system-err><![CDATA[Jun 17, 2024 11:47:46 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 18, 2024 8:58:04 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 17, 2024 11:47:46 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 18, 2024 8:58:04 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 17, 2024 11:47:47 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 18, 2024 8:58:05 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 17, 2024 11:47:48 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 18, 2024 8:58:05 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 17, 2024 11:47:49 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 18, 2024 8:58:06 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 17, 2024 11:47:49 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 18, 2024 8:58:07 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User tries to decrypt a file with incorrect decryption key&quot;, &quot;Role Managment Test&quot;](3)" classname="cuccumbersOptions.TestNGRunner" time="12.263">
+    <system-out><![CDATA[
+Scenario: User tries to decrypt a file with incorrect decryption key                           # src/test/java/features/FileEncryptionAndDecryptionTest.feature:21
+08:58:15.794 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:58:15.797 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:58:15.798 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:58:15.798 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:58:15.801 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:58:15.801 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:58:16.395 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:58:16.400 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:58:16.401 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:58:16.401 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:58:16.405 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:58:16.405 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:58:17.087 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:58:17.095 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:58:17.095 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:58:17.095 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:58:17.100 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:58:17.100 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:58:17.670 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:58:17.675 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:58:17.676 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:58:17.676 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:58:17.680 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:58:17.680 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:58:18.239 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:58:18.245 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:58:18.246 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:58:18.246 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:58:18.252 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:58:18.253 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+08:58:18.822 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+08:58:18.829 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 09:21:48 18/06/2024 PDT)
+08:58:18.829 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.61 in cache (valid until 22:20:12 18/06/2024 PDT)
+08:58:18.830 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.61 (resolved driver for Chrome 126)
+08:58:18.833 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.61 found in cache
+08:58:18.833 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.61\chromedriver.exe
+  Given The user visits the app's homepage                                                     # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_visits_the_homepage()
+  When The user clicks on login button                                                         # stepDefinitions.FileEncryptionAndDecryptionTest.the_user_clisk_on_the_login_button()
+  When The user logs in using their email address and password                                 # stepDefinitions.FileEncryptionAndDecryptionTest.the_user_logins_with_correct_email_address_and_password()
+  When The user cliks on the Try Decryption button on homepage                                 # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_cliks_on_the_Try_Decryption_button_on_homepage()
+  When The user cliks on Choose File button and selects a files to upload for Decryption       # stepDefinitions.FileEncryptionAndDecryptionTest.user_selects_a_file_to_upload_for_Decryption()
+  When The user selects encryption type, and inputs the wrong key used for encryption          # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_selects_encryption_type_and_inputs_the_wrong_key_used_for_encryption()
+  When The user clicks the Decrypt button to decrypt the file incorrectly                      # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_clicks_the_Decrypt_button_to_encrypt_the_file_2()
+  Then The user is presented with an error message that the inputted encryption key is invalid # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_is_presented_with_an_error_message_that_the_inputted_encryption_key_is_invalid()
+]]></system-out>
+    <system-err><![CDATA[Jun 18, 2024 8:58:16 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
+Jun 18, 2024 8:58:17 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
+Jun 18, 2024 8:58:17 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
+Jun 18, 2024 8:58:18 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
+Jun 18, 2024 8:58:18 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
+Jun 18, 2024 8:58:19 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>

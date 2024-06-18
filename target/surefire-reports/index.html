@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="cuccumbersOptions.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User wants to decrypt an uploaded file&quot;, &quot;Role Managment Test&quot;)">runScenario("User wants to decrypt an uploaded file", "Role Managment Test")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +117,12 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="cuccumbersOptions.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Admin uploads a files to the app for saving&quot;, &quot;File Visibility (Admin)&quot;)">runScenario("Admin uploads a files to the app for saving", "File Visibility (Admin)")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="cuccumbersOptions.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User tries to decrypt a file with incorrect decryption key&quot;, &quot;Role Managment Test&quot;)">runScenario("User tries to decrypt a file with incorrect decryption key", "Role Managment Test")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="cuccumbersOptions.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Admin checks if the uploaded file is visible to users&quot;, &quot;File Visibility (Admin)&quot;)">runScenario("Admin checks if the uploaded file is visible to users", "File Visibility (Admin)")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="cuccumbersOptions.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User wants to encrypt an uploaded file&quot;, &quot;Role Managment Test&quot;)">runScenario("User wants to encrypt an uploaded file", "Role Managment Test")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -123,6 +137,29 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">cuccumbersOptions.TestNGRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User wants to decrypt an uploaded file&quot;, &quot;Role Managment Test&quot;)">
+                  </a> <!-- runScenario("User wants to decrypt an uploaded file", "Role Managment Test") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User wants to decrypt an uploaded file","Role Managment Test")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [ready] but found [finished]
+	at stepDefinitions.FileEncryptionAndDecryptionTest.The_user_clicks_the_Decrypt_button_to_encrypt_the_file_1(FileEncryptionAndDecryptionTest.java:195)
+	at ✽.The user clicks the Decrypt button to decrypt the file correctly(file:///C:/Users/basha/Downloads/crypto-testing/src/test/java/features/FileEncryptionAndDecryptionTest.feature:19)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -131,20 +168,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Admin uploads a files to the app for saving&quot;, &quot;File Visibility (Admin)&quot;)">
-                  </a> <!-- runScenario("Admin uploads a files to the app for saving", "File Visibility (Admin)") -->
+                  <a name="runScenario(&quot;User tries to decrypt a file with incorrect decryption key&quot;, &quot;Role Managment Test&quot;)">
+                  </a> <!-- runScenario("User tries to decrypt a file with incorrect decryption key", "Role Managment Test") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Admin uploads a files to the app for saving","File Visibility (Admin)")</span>
+                  <span class="parameters">("User tries to decrypt a file with incorrect decryption key","Role Managment Test")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Admin checks if the uploaded file is visible to users&quot;, &quot;File Visibility (Admin)&quot;)">
-                  </a> <!-- runScenario("Admin checks if the uploaded file is visible to users", "File Visibility (Admin)") -->
+                  <a name="runScenario(&quot;User wants to encrypt an uploaded file&quot;, &quot;Role Managment Test&quot;)">
+                  </a> <!-- runScenario("User wants to encrypt an uploaded file", "Role Managment Test") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Admin checks if the uploaded file is visible to users","File Visibility (Admin)")</span>
+                  <span class="parameters">("User wants to encrypt an uploaded file","Role Managment Test")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -215,20 +252,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'cuccumbersOptions.TestNGRunner')
-data.setCell(0, 3, 37566);
+data.setCell(0, 3, 12264);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'cuccumbersOptions.TestNGRunner')
-data.setCell(1, 3, 9117);
+data.setCell(1, 3, 12257);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'cuccumbersOptions.TestNGRunner')
+data.setCell(2, 3, 7274);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -256,20 +297,26 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">cuccumbersOptions.TestNGRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@2396dc4e)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@206a465f)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Admin uploads a files to the app for saving", "File Visibility (Admin)")</span>
-                <span class="method-start">416 ms</span>
+                <span class="method-name">runScenario("User wants to encrypt an uploaded file", "Role Managment Test")</span>
+                <span class="method-start">299 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Admin checks if the uploaded file is visible to users", "File Visibility (Admin)")</span>
-                <span class="method-start">9538 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("User wants to decrypt an uploaded file", "Role Managment Test")</span>
+                <span class="method-start">7574 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User tries to decrypt a file with incorrect decryption key", "Role Managment Test")</span>
+                <span class="method-start">19835 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">47106 ms</span>
+                <span class="method-start">32100 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

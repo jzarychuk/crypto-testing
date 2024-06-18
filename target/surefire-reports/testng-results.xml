@@ -1,59 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-17T23:47:35 PDT" name="Surefire suite" finished-at="2024-06-17T23:48:23 PDT" duration-ms="47161">
+  <suite started-at="2024-06-18T08:57:55 PDT" name="Surefire suite" finished-at="2024-06-18T08:58:28 PDT" duration-ms="32142">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cuccumbersOptions.TestNGRunner@3d34d211]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cuccumbersOptions.TestNGRunner@43c1b556]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-06-17T23:47:35 PDT" name="Surefire test" finished-at="2024-06-17T23:48:23 PDT" duration-ms="47161">
+    <test started-at="2024-06-18T08:57:55 PDT" name="Surefire test" finished-at="2024-06-18T08:58:28 PDT" duration-ms="32142">
       <class name="cuccumbersOptions.TestNGRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cuccumbersOptions.TestNGRunner@3d34d211]" started-at="2024-06-17T23:47:35 PDT" name="setUpClass" finished-at="2024-06-17T23:47:36 PDT" duration-ms="405" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cuccumbersOptions.TestNGRunner@43c1b556]" started-at="2024-06-18T08:57:55 PDT" name="setUpClass" finished-at="2024-06-18T08:57:56 PDT" duration-ms="291" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2396dc4e]]>
+                <![CDATA[org.testng.TestRunner@206a465f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cuccumbersOptions.TestNGRunner@3d34d211]" started-at="2024-06-17T23:47:36 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T23:47:45 PDT" duration-ms="9117" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cuccumbersOptions.TestNGRunner@43c1b556]" started-at="2024-06-18T08:57:56 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T08:58:03 PDT" duration-ms="7274" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Admin uploads a files to the app for saving"]]>
+                <![CDATA["User wants to encrypt an uploaded file"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["File Visibility (Admin)"]]>
+                <![CDATA["Role Managment Test"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cuccumbersOptions.TestNGRunner@3d34d211]" started-at="2024-06-17T23:47:45 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T23:48:22 PDT" duration-ms="37566" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cuccumbersOptions.TestNGRunner@43c1b556]" started-at="2024-06-18T08:58:03 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T08:58:15 PDT" duration-ms="12257" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Admin checks if the uploaded file is visible to users"]]>
+                <![CDATA["User wants to decrypt an uploaded file"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["File Visibility (Admin)"]]>
+                <![CDATA["Role Managment Test"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [ready] but found [finished]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [ready] but found [finished]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at stepDefinitions.FileEncryptionAndDecryptionTest.The_user_clicks_the_Decrypt_button_to_encrypt_the_file_1(FileEncryptionAndDecryptionTest.java:195)
+at ✽.The user clicks the Decrypt button to decrypt the file correctly(file:///C:/Users/basha/Downloads/crypto-testing/src/test/java/features/FileEncryptionAndDecryptionTest.feature:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cuccumbersOptions.TestNGRunner@43c1b556]" started-at="2024-06-18T08:58:15 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T08:58:28 PDT" duration-ms="12264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User tries to decrypt a file with incorrect decryption key"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Role Managment Test"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cuccumbersOptions.TestNGRunner@3d34d211]" started-at="2024-06-17T23:48:22 PDT" name="tearDownClass" finished-at="2024-06-17T23:48:23 PDT" duration-ms="37" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cuccumbersOptions.TestNGRunner@43c1b556]" started-at="2024-06-18T08:58:28 PDT" name="tearDownClass" finished-at="2024-06-18T08:58:28 PDT" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

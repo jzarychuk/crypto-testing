@@ -28,6 +28,9 @@ public class FileVisibilityTest {
 	private WebDriver browser;
 	private WebDriverWait wait;
 
+	private final String email = "bashar.nexus@gmail.com";
+	private final String password = "basha97";
+
 	@Before
 	public void setUp() {
 		// Setup the ChromeDriver using WebDriverManager, see the pom.xml file
@@ -127,8 +130,6 @@ public class FileVisibilityTest {
 
 	@When("The admin logins as user with email and password")
 	public void The_admin_logins_as_user_with_email_and_password() {
-		String email = "bashar.nexus@gmail.com";
-		String password = "basha97";
 
 		WebElement email_box = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/app-header/div[2]/div/app-login-page/div/div[2]/form/div[1]/input")));
@@ -161,10 +162,12 @@ public class FileVisibilityTest {
 	}
 
 	@Then("The system shouldn't display the Resources category")
-	public void The_system_shouldnt_display_the_Resources_category() {
-
+	public void The_system_shouldnt_display_the_Resources_category() throws InterruptedException {
+		
+		Thread.sleep(3000);
+		
 		try {
-			WebElement resources = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("Resources")));
+			WebElement resources = browser.findElement(By.name("Resources"));
 			Assert.assertTrue(false);
 		} catch (Exception e) {
 			Assert.assertTrue(true);

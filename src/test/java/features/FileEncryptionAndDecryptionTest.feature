@@ -16,4 +16,14 @@ Feature: Role Managment Test
              When The user cliks on the Try Decryption button on homepage
              When The user cliks on Choose File button and selects a files to upload for Decryption
              When The user selects encryption type, and inputs the key used for encryption
-             Then The user clicks the Decrypt button to decrypt the file
+             Then The user clicks the Decrypt button to decrypt the file correctly
+             
+        Scenario: User tries to decrypt a file with incorrect decryption key
+            Given The user visits the app's homepage
+             When The user clicks on login button
+             When The user logs in using their email address and password
+             When The user cliks on the Try Decryption button on homepage
+             When The user cliks on Choose File button and selects a files to upload for Decryption
+             When The user selects encryption type, and inputs the wrong key used for encryption
+             When The user clicks the Decrypt button to decrypt the file incorrectly
+             Then The user is presented with an error message that the inputted encryption key is invalid
