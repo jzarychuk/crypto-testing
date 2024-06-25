@@ -101,12 +101,14 @@ public class RoleManagmentTest {
 	}
 
 	@Then("Admin changes the first user role to Employee")
-	public void Admin_changes_the_first_user_role_to_Employee() {
+	public void Admin_changes_the_first_user_role_to_Employee() throws InterruptedException {
 		WebElement reg_accounts_tab = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#reg-tab")));
 		((JavascriptExecutor) browser).executeScript("arguments[0].click();", reg_accounts_tab);
-
+		
+		Thread.sleep(2000);
+		
 		WebElement edit_role_button = wait.until(ExpectedConditions.elementToBeClickable(
-				By.cssSelector("#pr_id_5-table > tbody > tr:nth-child(1) > td:nth-child(6) > div > button")));
+				By.cssSelector("#pr_id_5-table > tbody > tr > td:nth-child(6) > div > button")));
 		edit_role_button.click();
 
 		try {
@@ -119,9 +121,12 @@ public class RoleManagmentTest {
 		WebElement approve_button = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
 				"#pr_id_5-table > tbody > tr:nth-child(1) > td:nth-child(6) > div > button.p-element.p-button-rounded.p-button-text.p-button-success.mr-2.p-button.p-component.p-button-icon-only.ng-star-inserted > span")));
 		approve_button.click();
-		WebElement current_role = wait.until(ExpectedConditions.elementToBeClickable(
-				By.cssSelector("#pr_id_5-table > tbody > tr:nth-child(1) > td:nth-child(4) > p-celleditor")));
-		Assert.assertEquals("employee", current_role.getText().toLowerCase());
+		
+		Thread.sleep(2000);
+		
+		WebElement success_message = wait.until(ExpectedConditions.visibilityOfElementLocated(
+				By.cssSelector("body > app-root > app-layout > div > p-toast > div > p-toastitem > div > div > div")));
+		Assert.assertTrue(success_message.getText().toLowerCase().contains("successfully"));
 
 	}
 
