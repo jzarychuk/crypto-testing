@@ -29,7 +29,7 @@ public class FileVisibilityTest {
 	private WebDriverWait wait;
 
 	private final String email = "bashar.nexus@gmail.com";
-	private final String password = "basha97";
+	private final String password = "bash97";
 
 	@Before
 	public void setUp() {

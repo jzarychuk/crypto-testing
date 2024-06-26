@@ -1,15 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 31.99 s <<< FAILURE! -- in TestSuite
-cuccumbersOptions.TestNGRunner.runScenario["User wants to decrypt an uploaded file", "Role Managment Test"](2) -- Time elapsed: 11.57 s <<< FAILURE!
-java.lang.AssertionError: expected [ready] but found [finished]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at stepDefinitions.FileEncryptionAndDecryptionTest.The_user_clicks_the_Decrypt_button_to_encrypt_the_file_1(FileEncryptionAndDecryptionTest.java:195)
-	at ✽.The user clicks the Decrypt button to decrypt the file correctly(file:///C:/Users/basha/Downloads/crypto-testing/src/test/java/features/FileEncryptionAndDecryptionTest.feature:19)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.38 s -- in TestSuite

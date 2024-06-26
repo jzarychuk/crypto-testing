@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="31.992" tests="3" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="16.377" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
-    <property name="webdriver.chrome.driver" value="C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.class.path" value="C:\Users\basha\Downloads\crypto-testing\target\test-classes;C:\Users\basha\Downloads\crypto-testing\target\classes;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\basha\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\basha\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\basha\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\basha\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\basha\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\basha\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\basha\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\basha\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\basha\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\basha\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\basha\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\basha\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\basha\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\basha\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\basha\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\basha\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\basha\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\basha\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\basha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-testng\7.18.0\cucumber-testng-7.18.0.jar;C:\Users\basha\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\basha\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\basha\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\basha\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\basha\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\basha\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\basha\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\basha\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\basha\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\basha\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\basha\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\basha\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\basha\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\basha\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\basha\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\basha\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\basha\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\basha\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\basha\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\basha\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\basha\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\basha\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\basha\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\basha\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\basha\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\basha\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\basha\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\basha\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\basha\AppData\Local\Temp\surefire1920308439923511031\surefirebooter-20240623191721950_3.jar C:\Users\basha\AppData\Local\Temp\surefire1920308439923511031 2024-06-23T19-17-21_841-jvmRun1 surefire-20240623191721950_1tmp surefire_0-20240623191721950_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\basha\AppData\Local\Temp\surefire5421614593237557634\surefirebooter-20240626004827491_3.jar C:\Users\basha\AppData\Local\Temp\surefire5421614593237557634 2024-06-26T00-48-27_389-jvmRun1 surefire-20240626004827491_1tmp surefire_0-20240626004827491_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\basha\Downloads\crypto-testing\target\test-classes;C:\Users\basha\Downloads\crypto-testing\target\classes;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\basha\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\basha\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\basha\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\basha\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\basha\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\basha\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\basha\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\basha\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\basha\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\basha\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\basha\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\basha\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\basha\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\basha\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\basha\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\basha\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\basha\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\basha\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\basha\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\basha\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\basha\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\basha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\basha\.m2\repository\io\cucumber\cucumber-testng\7.18.0\cucumber-testng-7.18.0.jar;C:\Users\basha\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\basha\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\basha\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\basha\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\basha\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\basha\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\basha\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\basha\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\basha\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\basha\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\basha\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\basha\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\basha\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\basha\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\basha\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\basha\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\basha\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\basha\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\basha\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\basha\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\basha\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\basha\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\basha\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\basha\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\basha\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\basha\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\basha\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\basha\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\basha\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\basha\AppData\Local\Temp\surefire1920308439923511031\surefirebooter-20240623191721950_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\basha\AppData\Local\Temp\surefire5421614593237557634\surefirebooter-20240626004827491_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
@@ -60,317 +60,124 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="runScenario[&quot;User wants to encrypt an uploaded file&quot;, &quot;Role Managment Test&quot;](1)" classname="cuccumbersOptions.TestNGRunner" time="7.546">
+  <testcase name="runScenario[&quot;Admin uploads a files to the app for saving&quot;, &quot;File Visibility (Admin)&quot;](1)" classname="cuccumbersOptions.TestNGRunner" time="6.94">
     <system-out><![CDATA[
-Scenario: User wants to encrypt an uploaded file                                         # src/test/java/features/FileEncryptionAndDecryptionTest.feature:3
-19:17:23.040 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:23.252 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Removing resolution chrome=126 from cache (expired on Sun Jun 23 17:49:39 PDT 2024)
-19:17:23.273 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000001 preparing request execution
-19:17:23.288 [main] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec -- ex-0000000001 target auth state: UNCHALLENGED
-19:17:23.289 [main] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec -- ex-0000000001 proxy auth state: UNCHALLENGED
-19:17:23.289 [main] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec -- ex-0000000001 acquiring connection with route {s}->https://raw.githubusercontent.com:443
-19:17:23.289 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000001 acquiring endpoint (3 MINUTES)
-19:17:23.292 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000001 endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
-19:17:23.295 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000001 endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
-19:17:23.303 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ex-0000000001 acquired ep-0000000001
-19:17:23.303 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ex-0000000001 acquired endpoint ep-0000000001
-19:17:23.303 [main] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec -- ex-0000000001 opening connection {s}->https://raw.githubusercontent.com:443
-19:17:23.304 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 connecting endpoint (null)
-19:17:23.307 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
-19:17:23.307 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com resolving remote address
-19:17:23.329 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com resolved to [raw.githubusercontent.com/185.199.108.133, raw.githubusercontent.com/185.199.109.133, raw.githubusercontent.com/185.199.110.133, raw.githubusercontent.com/185.199.111.133]
-19:17:23.333 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com:443 connecting null->raw.githubusercontent.com/185.199.108.133:443 (30 SECONDS)
-19:17:23.333 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Connecting socket to raw.githubusercontent.com/185.199.108.133:443 with timeout 30 SECONDS
-19:17:23.379 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Enabled protocols: [TLSv1.3, TLSv1.2]
-19:17:23.379 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
-19:17:23.379 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Starting handshake (null)
-19:17:23.464 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -- Secure session established
-19:17:23.465 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  negotiated protocol: TLSv1.3
-19:17:23.465 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  negotiated cipher suite: TLS_AES_128_GCM_SHA256
-19:17:23.465 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  peer principal: CN=*.github.io, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
-19:17:23.466 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  peer alternative names: [*.github.io, github.io, githubusercontent.com, www.github.com, *.github.com, *.githubusercontent.com, github.com]
-19:17:23.466 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory --  issuer principal: CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1, O=DigiCert Inc, C=US
-19:17:23.466 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultManagedHttpClientConnection -- http-outgoing-0 set socket timeout to 3 MINUTES
-19:17:23.466 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator -- raw.githubusercontent.com:443 connected null->raw.githubusercontent.com/185.199.108.133:443 as http-outgoing-0
-19:17:23.466 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connected http-outgoing-0
-19:17:23.466 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 endpoint connected
-19:17:23.467 [main] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec -- ex-0000000001 executing GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
-19:17:23.467 [main] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies -- ex-0000000001 Cookie spec selected: strict
-19:17:23.471 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 start execution ex-0000000001
-19:17:23.471 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 executing exchange ex-0000000001 over http-outgoing-0
-19:17:23.472 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
-19:17:23.472 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
-19:17:23.472 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> accept-encoding: gzip, deflate, br
-19:17:23.472 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> cache-control: max-age=0
-19:17:23.472 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> connection: keep-alive
-19:17:23.472 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 >> Host: raw.githubusercontent.com
-19:17:23.472 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1[\r][\n]"
-19:17:23.472 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
-19:17:23.472 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
-19:17:23.472 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
-19:17:23.472 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "connection: keep-alive[\r][\n]"
-19:17:23.472 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
-19:17:23.472 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 >> "[\r][\n]"
-19:17:23.596 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
-19:17:23.597 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Connection: keep-alive[\r][\n]"
-19:17:23.597 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Content-Length: 745[\r][\n]"
-19:17:23.597 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
-19:17:23.597 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
-19:17:23.597 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
-19:17:23.597 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "ETag: W/"dd41edff335272162022217759820159dac501cff56850e2510f504462cd9b5f"[\r][\n]"
-19:17:23.597 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
-19:17:23.597 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
-19:17:23.597 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
-19:17:23.598 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
-19:17:23.598 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-GitHub-Request-Id: E4F7:11DC40:C71365:D55F13:66789428[\r][\n]"
-19:17:23.598 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
-19:17:23.598 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
-19:17:23.598 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Date: Mon, 24 Jun 2024 02:17:23 GMT[\r][\n]"
-19:17:23.598 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
-19:17:23.599 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Served-By: cache-pdx12333-PDX[\r][\n]"
-19:17:23.599 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Cache: HIT[\r][\n]"
-19:17:23.599 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Cache-Hits: 0[\r][\n]"
-19:17:23.599 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Timer: S1719195443.095127,VS0,VE102[\r][\n]"
-19:17:23.599 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Vary: Authorization,Accept-Encoding,Origin[\r][\n]"
-19:17:23.599 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
-19:17:23.599 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Cross-Origin-Resource-Policy: cross-origin[\r][\n]"
-19:17:23.599 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "X-Fastly-Request-ID: fee226b4379624c912a218f8f54889fe08d2bc18[\r][\n]"
-19:17:23.600 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Expires: Mon, 24 Jun 2024 02:22:23 GMT[\r][\n]"
-19:17:23.600 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "Source-Age: 0[\r][\n]"
-19:17:23.600 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "[\r][\n]"
-19:17:23.605 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << HTTP/1.1 200 OK
-19:17:23.605 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Connection: keep-alive
-19:17:23.606 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Content-Length: 745
-19:17:23.606 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Cache-Control: max-age=300
-19:17:23.606 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
-19:17:23.606 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Content-Type: text/plain; charset=utf-8
-19:17:23.606 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << ETag: W/"dd41edff335272162022217759820159dac501cff56850e2510f504462cd9b5f"
-19:17:23.606 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Strict-Transport-Security: max-age=31536000
-19:17:23.606 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Content-Type-Options: nosniff
-19:17:23.606 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Frame-Options: deny
-19:17:23.606 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-XSS-Protection: 1; mode=block
-19:17:23.606 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-GitHub-Request-Id: E4F7:11DC40:C71365:D55F13:66789428
-19:17:23.606 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Content-Encoding: gzip
-19:17:23.606 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Accept-Ranges: bytes
-19:17:23.606 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Date: Mon, 24 Jun 2024 02:17:23 GMT
-19:17:23.607 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Via: 1.1 varnish
-19:17:23.607 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Served-By: cache-pdx12333-PDX
-19:17:23.607 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Cache: HIT
-19:17:23.607 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Cache-Hits: 0
-19:17:23.607 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Timer: S1719195443.095127,VS0,VE102
-19:17:23.607 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Vary: Authorization,Accept-Encoding,Origin
-19:17:23.607 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Access-Control-Allow-Origin: *
-19:17:23.607 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Cross-Origin-Resource-Policy: cross-origin
-19:17:23.607 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << X-Fastly-Request-ID: fee226b4379624c912a218f8f54889fe08d2bc18
-19:17:23.607 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Expires: Mon, 24 Jun 2024 02:22:23 GMT
-19:17:23.607 [main] DEBUG org.apache.hc.client5.http.headers -- http-outgoing-0 << Source-Age: 0
-19:17:23.612 [main] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec -- ex-0000000001 connection can be kept alive for 3 MINUTES
-19:17:23.619 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffffb5]W]o[0xffffffda]0[0x14]}[0xffffffe7]W\QUj% [0x1b][0xffffffad][0xffffffa6]i[0x12][0xf]4c[0xffffffdd]4*[0x18][0xffffffb4][0xffffffdd]&[0xfffffff9][0xffffffc5]$N[0xffffffb0][0xffffff94][0xffffffd8][0xffffffc8]NJ[0xffffffb7]_?[0xffffffdb][0xfffffff9]X[0xffffff92]:[0xffffffa3]k[0xffffffe8][0x1b][0xffffffb6][0xffffffef]=[0xffffffe7][0xffffffd8][0xfffffff7][0xffffffe4][0xffffffda][0xffffff9c][0xffffff80][0xffffffcb][0xffffffe3][0x18]3_[0xffffff82][0xffffff8f][0x13][0xffffffbc][0xffffffc1][0xffffff92][0xfffffff4]N[0xffffffe0]vK%[0x4]4"[0xffffffe0]q[0xffffff96]`[0xffffffca]$$[=[0xffffffc8]C[0x13][0xe][0x1b][0x2][0xffffffe4][0xffffff91]xiB|[0xffffffa0][0xffffffcc],[0xffffffcb]-[0xffffff89]"=[0xffffffe0][0xffffffc2]'B[0x7][0xfffffff9]$!^b[0x16][0x1f][0xffffff88][0xffffff90][0xffffff94][0xffffffab][0xffffffb5][0x0][0xffffff88][0xfffffffa][0x1d][\n]"
-19:17:23.619 [main] DEBUG org.apache.hc.client5.http.wire -- http-outgoing-0 << "B[0x18]l[0x4][0xffffffdf]K[0xffffffb5][0xffffffa0]([0xffffffcf][0xffffffdc][0xffffffad][0xffffffe0]1[0x19][0xffffffc0]'*H[0xffffffc0][0x1f][0x7][0xffffffb0][0xffffffd8][0x11][0xffffff81][0x7]0[0xfffffff3]C5kVi[0x1a][0xffffff9f]k|[0xffffff9f][0x6][0x1][0x11][0xffffff84]%[0xffffffc0]uLBY[0x8][0xfffffff2][0xffffff97]LH,[0xffffffe1][0xffffffec];e[0xffffffbe]B[0x1d][0xffffffc0][0xffffff9c][0xffffffb2]T[0xffffffc1][0xffffffdc]`[0xf][0x16][0xffffffeb][0xfffffff3][0xffffff9e][0xffffffe2][0xffffffc8](z[0xfffffff9]6F[0xffffff9e][0x19][0xffffff8e][0xfffffff6]Y[0xffffffc2][0xffffffe8][0xffffffcd][0xffffffdb][0xffffff89][0x17][0xfffffffb]#[0xffffffb5]+p\[0xffffffd8][0xffffffc7][0xffffffd4]3Gb[0xffffff8e]a[0xffffffbf]U|[0xffffffc0]pL&[0xfffffffd][0xffffffd3][0xffffffe5]jq[0xffffffbd][0xffffff9a][0xffffffde]|[0xfffffffa]2[0xffffff9f][0xffffffad]?[0xffffffa0][0x9]B[0xffffffa7][0x8]]s[0x1e]F[0x4][0xffffffa1][0xffffff8c][0x2][0xffffffa1][0xffffffe9]n[0x17]QOI[0xffffffe3][0xc][0xffffffa1][0xffffff9c]H![0xfffffff7]!$[0x9][0xffffffdc][0xffffffe7]g[0xffffffe1]<[0xffffffe0](m[0xffffffd7]3~[0xffffff81][0xffffff9e][0xffffffb3][0x1f][0xffffffef][0xffffffdf][0xffffff9d][0xffffffbf][0xffffffa6][0xffffffa8][0xffffff8b]g[0xffffff8a][0xffffff9a]/[0xffffffdc][0xffffffe9]|[0xffffffba]\~[0xffffff9c][0xffffffde]N_S[0xffffffcf][0xffffffe5]d5[0xffffffbb][0xffffff86]ow[0xffffffb3][0xffffffd5]O[0xfffffff8][0xfffffffc][0xffffffd5][0xffffffbd]Ck[0x1e]${,H[0xffffffc1][0xffffff96][0xffffff93]][0xffffffcd][0xffffffaf][0x8][0xfffffff6][0xc]^[0xffffffe1][0xffffffc5]^[0x13]4[0xffffffd2][0xffffff8e][0xffffffd1]>pR)[0xffffff9c][\r]eNh0[0xffffff86][0xffffffd9]:[0xc][0xffffff87]E[0xffffffa6]=q<i[0xffffff8b]o&[0xffffffc4][0xffffffd8]3<[0xffffff95][0x13][0xffffff90]N&8w[0xffffffe9][0x8][0xffffffef]v[0xffffff8e][0xffffffab][0xffffffbe]>es[0xffffffe9]([0x13]/[0xffffffd6][0xfffffff5][0xffffff80]*[0xffffffba][0xfffffff2]v[0xfffffffe][0xffffffd9][0xffffff94]DA6>[0xffffff8e][0xffffffbb]o[0xfffffff8]o[0x1a]E[0xffffffb8] A[0xffffffa8]@?T[0xffffffad]'*:{[0xfffffffa]xR.*[0xffffffce][0xffffffe9][0xffffffd7][0xffffffad][0xffffff93][0xffffff93]4[0xffffffc9][0xfffffffa][0xffffffda]<n*t[0xffffffeb][0xffffffb9]oV[0xffffffb6][0xffffffc0]/M[0xffffff94]O[0xffffffc0][0xfffffff0][0xffffffe1]i[0xffffff90][0xffffffb5][0xfffffffe]9[0xffffff8b][0xffffffad][0xfffffff2]U,Ul[0xffffffdd][0x13]KL[0xffffffa2][0x6][0xffffffdd][0xffffffca]\?`[0xffffffea][0x9].[0xffffffd5]I [0xffffffa4]i[0x1a]_i,[\r][0xffffffdd][0xffffffa1][0xffffffc3][0xffffffae]kzI[0xffffffd1]_Q[0xffffffce]Ek[0xffffffcb][0xfffffff8]Kf[0xffffffb8][0xfffffffe][0xffffffd9]3[0xc][0xffffffe6][0xffffffd3][0xffffff8e][0x11][0x17][0x10]C[0x1d]`i[0x19][0xffffffd5][0xffffffbc][0xfffffff1][0xffffffa4]5[0xffffffbc][0x1e]o[0xfffffff5]K[0xffffffa9][0xffffffd6][0xfffffff8][0xffffffc1]f[0xffffff9b]z[0x4][0xffffffd4][0x1a][0xffffff86][0xffffffb9]^K[0x16]s[0xffffff91][0xfffffffe][0xffffffbf][0xffffff8b]l]~)x(p,[0x11]2[0x14][0x8]E8e[0xffffff9e][0xffffffca]:X[0xffffffa6][0xffffff86][0xffffff88].[0xffffffb6]9[0xffffff9a][0xffffff88].[0xfffffff7]]G[0xffffffea][0xffffffcb][0xe][0xfffffffb][0x7f].u[0xffffff83][0xffffffbb][0xfffffff4][0xffffffb3][0x19][0xffffffda][0xffffffec][0xffffff98][0xffffffc5]Y[0xfffffffd]h8m6\4[0xffffffc1][0xffffff8a][0xffffffb7][0xffffff98]z[0xffffffd0][0xffffffd5]oF5q[0x1c][0x13][0x16][0xfffffff0][0x1d][0x1e][0x19]5-[0xffffff9d][0xffffffef][0xffffffad]c[0xb]z[0xffffffae]/m[0xffffffe6]8[0xffffffb6][0xffffff96][0xfffffff6]7X[0xffffffc9]t[0xfffffff8][0xfffffff9][0xffffffa5][0x11]K[0xfffffffb][0x15]3[0xffffffc3][0xfffffffc][0x1f]B[0xffffffdb][0xffffffd3][0xffffffab][0xffffff92]4.[0xffffff93]Z[0xffffffdf]]:[0xffffffda][0xffffffea][0xffffffdc]B[0xffffffa6][0xffffffcd][0xffffffbc][0xffffffae][0x5][0xfffffff5][0x4][0xffffffd6]8[0xffffffc0][0xffffff82][0xffffff96][0xfffffff0][0xffffffd2][0xc][0xffffffed][0xffffffe0]Y[0xffffffa8][\r]:[[0xffffffa9][0x0][0xffffffff][0x1][0xfffffff8][0x15][0xffffffb4][0xffffffee][0xffffff8e][\r][0x0][0x0]"
-19:17:23.622 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient -- ep-0000000001 releasing valid endpoint
-19:17:23.623 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 releasing endpoint
-19:17:23.623 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connection http-outgoing-0 can be kept alive for 3 MINUTES
-19:17:23.623 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager -- ep-0000000001 connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
-19:17:23.623 [main] DEBUG io.github.bonigarcia.wdm.versions.VersionDetector -- Detecting chrome version using online commands.properties
-19:17:23.625 [main] DEBUG io.github.bonigarcia.wdm.versions.Shell -- Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES:\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
-19:17:23.712 [main] DEBUG io.github.bonigarcia.wdm.versions.Shell -- Result: Version=126.0.6478.114
-19:17:23.714 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:23.714 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:23.716 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Storing resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:23.728 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:23.729 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:24.460 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:24.473 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:24.474 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:24.474 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:24.480 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:24.481 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:25.044 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:25.051 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:25.052 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:25.052 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:25.057 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:25.058 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:25.616 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:25.624 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:25.624 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:25.624 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:25.629 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:25.630 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:26.203 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:26.210 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:26.211 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:26.211 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:26.216 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:26.217 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:26.817 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:26.822 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:26.822 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:26.824 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:26.827 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:26.828 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-  Given The user visits the app's homepage                                               # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_visits_the_homepage()
-  When The user clicks on login button                                                   # stepDefinitions.FileEncryptionAndDecryptionTest.the_user_clisk_on_the_login_button()
-  When The user logs in using their email address and password                           # stepDefinitions.FileEncryptionAndDecryptionTest.the_user_logins_with_correct_email_address_and_password()
-  When The user cliks on the Try Encryption button on homepage                           # stepDefinitions.FileEncryptionAndDecryptionTest.user_clicks_try_encryption()
-  When The user cliks on Choose File button and selects a files to upload for Encryption # stepDefinitions.FileEncryptionAndDecryptionTest.user_selects_a_file_to_upload_for_Encryption()
-  When The user selects encryption type, and auto generate encryptio key                 # stepDefinitions.FileEncryptionAndDecryptionTest.user_selects_enryptio_type()
-  Then The user clicks the Encrypt button to encrypt the file                            # stepDefinitions.FileEncryptionAndDecryptionTest.user_clicks_enrypt_and_recieves_encrypted_file()
+Scenario: Admin uploads a files to the app for saving                    # src/test/java/features/FileVisibilityTest.feature:3
+00:48:28.538 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+00:48:28.759 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 01:35:57 26/06/2024 PDT)
+00:48:28.760 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 23:31:43 26/06/2024 PDT)
+00:48:28.760 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+00:48:28.790 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+00:48:28.792 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+00:48:29.607 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+00:48:29.617 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 01:35:57 26/06/2024 PDT)
+00:48:29.618 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 23:31:43 26/06/2024 PDT)
+00:48:29.618 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+00:48:29.623 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+00:48:29.624 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+00:48:30.203 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+00:48:30.211 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 01:35:57 26/06/2024 PDT)
+00:48:30.211 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 23:31:43 26/06/2024 PDT)
+00:48:30.211 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+00:48:30.217 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+00:48:30.217 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+00:48:30.799 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+00:48:30.807 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 01:35:57 26/06/2024 PDT)
+00:48:30.807 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 23:31:43 26/06/2024 PDT)
+00:48:30.808 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+00:48:30.812 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+00:48:30.812 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+00:48:31.387 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+00:48:31.396 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 01:35:57 26/06/2024 PDT)
+00:48:31.397 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 23:31:43 26/06/2024 PDT)
+00:48:31.397 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+00:48:31.401 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+00:48:31.402 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+00:48:32.024 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+00:48:32.030 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 01:35:57 26/06/2024 PDT)
+00:48:32.031 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 23:31:43 26/06/2024 PDT)
+00:48:32.031 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+00:48:32.036 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+00:48:32.037 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+  Given The admin visits the homepage                                    # stepDefinitions.FileVisibilityTest.Admin_visits_homepage()
+  When The admin presses the login button                                # stepDefinitions.FileVisibilityTest.Admin_clicks_on_login_button()
+  When The admin logins with email and password                          # stepDefinitions.FileVisibilityTest.Admin_logins_with_emailand_password()
+  When The admin clicks on the Admin Panel tab                           # stepDefinitions.FileVisibilityTest.Admin_visits_Admin_Panel()
+  When The admin clicks on the Resources category                        # stepDefinitions.FileVisibilityTest.The_admin_clicks_on_the_Resources_category()
+  When The admin clicks on the Choose button to select a file for upload # stepDefinitions.FileVisibilityTest.The_admin_clicks_on_the_Choose_button_to_select_a_file_for_upload()
+  When The admin clicks the Upload button                                # stepDefinitions.FileVisibilityTest.The_admin_clicks_the_Upload_button()
+  Then The file is uploaded to the app                                   # stepDefinitions.FileVisibilityTest.The_file_is_uploaded_to_the_app()
 ]]></system-out>
-    <system-err><![CDATA[Jun 23, 2024 7:17:24 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 26, 2024 12:48:29 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:25 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 26, 2024 12:48:30 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:25 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 26, 2024 12:48:30 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:26 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 26, 2024 12:48:31 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:26 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 26, 2024 12:48:31 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:27 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 26, 2024 12:48:32 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;User wants to decrypt an uploaded file&quot;, &quot;Role Managment Test&quot;](2)" classname="cuccumbersOptions.TestNGRunner" time="11.569">
-    <failure message="expected [ready] but found [finished]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [ready] but found [finished]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at stepDefinitions.FileEncryptionAndDecryptionTest.The_user_clicks_the_Decrypt_button_to_encrypt_the_file_1(FileEncryptionAndDecryptionTest.java:195)
-	at ✽.The user clicks the Decrypt button to decrypt the file correctly(file:///C:/Users/basha/Downloads/crypto-testing/src/test/java/features/FileEncryptionAndDecryptionTest.feature:19)
-]]></failure>
+  <testcase name="runScenario[&quot;Admin checks if the uploaded file is visible to users&quot;, &quot;File Visibility (Admin)&quot;](2)" classname="cuccumbersOptions.TestNGRunner" time="8.798">
     <system-out><![CDATA[
-Scenario: User wants to decrypt an uploaded file                                         # src/test/java/features/FileEncryptionAndDecryptionTest.feature:12
-19:17:30.380 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:30.391 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:30.392 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:30.392 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:30.401 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:30.402 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:30.976 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:30.991 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:30.991 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:30.992 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:31.005 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:31.006 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:31.597 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:31.609 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:31.610 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:31.610 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:31.621 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:31.622 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:32.214 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:32.229 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:32.230 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:32.231 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:32.244 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:32.245 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:32.833 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:32.845 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:32.846 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:32.846 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:32.851 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:32.853 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:33.429 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:33.442 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:33.443 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:33.443 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:33.455 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:33.456 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-  Given The user visits the app's homepage                                               # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_visits_the_homepage()
-  When The user clicks on login button                                                   # stepDefinitions.FileEncryptionAndDecryptionTest.the_user_clisk_on_the_login_button()
-  When The user logs in using their email address and password                           # stepDefinitions.FileEncryptionAndDecryptionTest.the_user_logins_with_correct_email_address_and_password()
-  When The user cliks on the Try Decryption button on homepage                           # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_cliks_on_the_Try_Decryption_button_on_homepage()
-  When The user cliks on Choose File button and selects a files to upload for Decryption # stepDefinitions.FileEncryptionAndDecryptionTest.user_selects_a_file_to_upload_for_Decryption()
-  When The user selects encryption type, and inputs the key used for encryption          # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_selects_encryption_type_and_inputs_the_key_used_for_encryption()
-  Then The user clicks the Decrypt button to decrypt the file correctly                  # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_clicks_the_Decrypt_button_to_encrypt_the_file_1()
-      java.lang.AssertionError: expected [ready] but found [finished]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at stepDefinitions.FileEncryptionAndDecryptionTest.The_user_clicks_the_Decrypt_button_to_encrypt_the_file_1(FileEncryptionAndDecryptionTest.java:195)
-	at ✽.The user clicks the Decrypt button to decrypt the file correctly(file:///C:/Users/basha/Downloads/crypto-testing/src/test/java/features/FileEncryptionAndDecryptionTest.feature:19)
-
+Scenario: Admin checks if the uploaded file is visible to users             # src/test/java/features/FileVisibilityTest.feature:13
+00:48:35.272 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+00:48:35.278 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 01:35:57 26/06/2024 PDT)
+00:48:35.278 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 23:31:43 26/06/2024 PDT)
+00:48:35.279 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+00:48:35.285 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+00:48:35.285 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+00:48:35.849 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+00:48:35.857 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 01:35:57 26/06/2024 PDT)
+00:48:35.858 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 23:31:43 26/06/2024 PDT)
+00:48:35.858 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+00:48:35.864 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+00:48:35.865 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+00:48:36.431 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+00:48:36.438 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 01:35:57 26/06/2024 PDT)
+00:48:36.438 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 23:31:43 26/06/2024 PDT)
+00:48:36.438 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+00:48:36.443 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+00:48:36.443 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+00:48:37.022 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+00:48:37.028 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 01:35:57 26/06/2024 PDT)
+00:48:37.029 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 23:31:43 26/06/2024 PDT)
+00:48:37.029 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+00:48:37.033 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+00:48:37.034 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+00:48:37.610 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+00:48:37.617 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 01:35:57 26/06/2024 PDT)
+00:48:37.618 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 23:31:43 26/06/2024 PDT)
+00:48:37.618 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+00:48:37.622 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+00:48:37.622 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+00:48:38.221 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+00:48:38.228 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 01:35:57 26/06/2024 PDT)
+00:48:38.229 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 23:31:43 26/06/2024 PDT)
+00:48:38.229 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+00:48:38.233 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+00:48:38.233 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+  Given The admin visits the homepage                                       # stepDefinitions.FileVisibilityTest.Admin_visits_homepage()
+  When The admin presses the login button                                   # stepDefinitions.FileVisibilityTest.Admin_clicks_on_login_button()
+  When The admin logins as user with email and password                     # stepDefinitions.FileVisibilityTest.The_admin_logins_as_user_with_email_and_password()
+  When The admin clicks on the username option and accesses My Profile page # stepDefinitions.FileVisibilityTest.The_admin_clicks_on_the_username_option_and_accesses_My_Profile_page()
+  Then The system shouldn't display the Resources category                  # stepDefinitions.FileVisibilityTest.The_system_shouldnt_display_the_Resources_category()
 ]]></system-out>
-    <system-err><![CDATA[Jun 23, 2024 7:17:30 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 26, 2024 12:48:35 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:31 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 26, 2024 12:48:36 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:32 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 26, 2024 12:48:37 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:32 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 26, 2024 12:48:37 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:33 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 26, 2024 12:48:38 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:34 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-]]></system-err>
-  </testcase>
-  <testcase name="runScenario[&quot;User tries to decrypt a file with incorrect decryption key&quot;, &quot;Role Managment Test&quot;](3)" classname="cuccumbersOptions.TestNGRunner" time="12.093">
-    <system-out><![CDATA[
-Scenario: User tries to decrypt a file with incorrect decryption key                           # src/test/java/features/FileEncryptionAndDecryptionTest.feature:21
-19:17:41.950 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:41.964 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:41.965 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:41.965 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:41.976 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:41.977 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:42.554 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:42.565 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:42.566 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:42.566 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:42.579 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:42.580 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:43.144 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:43.149 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:43.150 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:43.150 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:43.161 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:43.162 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:43.742 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:43.757 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:43.758 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:43.758 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:43.769 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:43.770 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:44.379 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:44.389 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:44.389 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:44.389 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:44.402 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:44.402 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-19:17:44.974 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-19:17:44.984 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 20:17:23 23/06/2024 PDT)
-19:17:44.985 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.63 in cache (valid until 16:49:39 24/06/2024 PDT)
-19:17:44.985 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
-19:17:44.993 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.63 found in cache
-19:17:44.994 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\basha\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
-  Given The user visits the app's homepage                                                     # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_visits_the_homepage()
-  When The user clicks on login button                                                         # stepDefinitions.FileEncryptionAndDecryptionTest.the_user_clisk_on_the_login_button()
-  When The user logs in using their email address and password                                 # stepDefinitions.FileEncryptionAndDecryptionTest.the_user_logins_with_correct_email_address_and_password()
-  When The user cliks on the Try Decryption button on homepage                                 # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_cliks_on_the_Try_Decryption_button_on_homepage()
-  When The user cliks on Choose File button and selects a files to upload for Decryption       # stepDefinitions.FileEncryptionAndDecryptionTest.user_selects_a_file_to_upload_for_Decryption()
-  When The user selects encryption type, and inputs the wrong key used for encryption          # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_selects_encryption_type_and_inputs_the_wrong_key_used_for_encryption()
-  When The user clicks the Decrypt button to decrypt the file incorrectly                      # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_clicks_the_Decrypt_button_to_encrypt_the_file_2()
-  Then The user is presented with an error message that the inputted encryption key is invalid # stepDefinitions.FileEncryptionAndDecryptionTest.The_user_is_presented_with_an_error_message_that_the_inputted_encryption_key_is_invalid()
-]]></system-out>
-    <system-err><![CDATA[Jun 23, 2024 7:17:42 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:43 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:43 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:44 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:44 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-Jun 23, 2024 7:17:45 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 26, 2024 12:48:38 A.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>

@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 // Configure Cucumber options using the @CucumberOptions annotation
 @CucumberOptions(
 		// Specify the path to the feature files
-		features = "src/test/java/features/FileEncryptionAndDecryptionTest.feature",
+		features = "src/test/java/features/FileVisibilityTest.feature",
 		// Specify the package containing the step definitions
 		glue = "stepDefinitions",
 

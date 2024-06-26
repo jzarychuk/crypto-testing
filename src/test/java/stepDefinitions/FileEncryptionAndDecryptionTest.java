@@ -105,7 +105,7 @@ public class FileEncryptionAndDecryptionTest {
 				"/html/body/app-root/app-layout/div/app-decryption/div/div/div/div[1]/form/div/div[2]/div/p-fileupload/div/div[1]/span")));
 
 		WebElement file_input = file_upload_container.findElement(By.xpath(".//input[@type='file']"));
-		file_input.sendKeys("C:\\Users\\basha\\Downloads\\joins-sql.png");
+		file_input.sendKeys("C:\\Users\\basha\\Downloads\\joins-sql (1).png");
 
 	}
 
