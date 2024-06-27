@@ -27,7 +27,7 @@ public class FileEncryptionAndDecryptionTest {
 	private WebDriverWait wait;
 
 	private final String email = "bashar.nexus@gmail.com";
-	private final String password = "basha97";
+	private final String password = "bash97";
 
 	@Before
 	public void setUp() {
@@ -80,14 +80,14 @@ public class FileEncryptionAndDecryptionTest {
 		login_click.click();
 	}
 
-	@When("The user cliks on the Try Encryption button on homepage")
+	@When("The user clicks on the Try Encryption button on homepage")
 	public void user_clicks_try_encryption() {
 		WebElement encryption_button = wait.until(ExpectedConditions.elementToBeClickable(
 				By.xpath("/html/body/app-root/app-layout/div/app-home/div[1]/div[1]/div/div/div[1]/div/div/a[1]")));
 		encryption_button.click();
 	}
 
-	@When("The user cliks on Choose File button and selects a files to upload for Encryption")
+	@When("The user clicks on Choose File button and selects a files to upload for Encryption")
 	public void user_selects_a_file_to_upload_for_Encryption() {
 
 		WebElement file_upload_container = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
@@ -98,7 +98,7 @@ public class FileEncryptionAndDecryptionTest {
 
 	}
 
-	@When("The user cliks on Choose File button and selects a files to upload for Decryption")
+	@When("The user clicks on Choose File button and selects a files to upload for Decryption")
 	public void user_selects_a_file_to_upload_for_Decryption() {
 
 		WebElement file_upload_container = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
@@ -109,8 +109,8 @@ public class FileEncryptionAndDecryptionTest {
 
 	}
 
-	@When("The user selects encryption type, and auto generate encryptio key")
-	public void user_selects_enryptio_type() {
+	@When("The user selects encryption type, and inserts a correct encryption key")
+	public void user_selects_enryptio_type_and_inserts_correct_encryption_key() {
 
 		Select ecryption_types_menu = new Select(wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"/html/body/app-root/app-layout/div/app-encryption/div/div/div/div[1]/form/div/div[2]/div/div[2]/div[1]/div[1]/select"))));
@@ -120,6 +120,19 @@ public class FileEncryptionAndDecryptionTest {
 				"/html/body/app-root/app-layout/div/app-encryption/div/div/div/div[1]/form/div/div[2]/div/div[2]/div[1]/div[2]/div/textarea")));
 
 		key_box.sendKeys("2b7e151628aed2a6abf7158809cf4f3c");
+	}
+	
+	@When("The user selects encryption type, and inserts an incorrect encryption key")
+	public void user_selects_enryptio_type_and_inserts_incorrect_encryption_key() {
+
+		Select ecryption_types_menu = new Select(wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"/html/body/app-root/app-layout/div/app-encryption/div/div/div/div[1]/form/div/div[2]/div/div[2]/div[1]/div[1]/select"))));
+		ecryption_types_menu.selectByIndex(0);
+
+		WebElement key_box = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"/html/body/app-root/app-layout/div/app-encryption/div/div/div/div[1]/form/div/div[2]/div/div[2]/div[1]/div[2]/div/textarea")));
+
+		key_box.sendKeys("12345678bbbb34223bbbaaazzz78888");
 	}
 
 	@Then("The user clicks the Encrypt button to encrypt the file")
@@ -135,9 +148,27 @@ public class FileEncryptionAndDecryptionTest {
 		Assert.assertTrue(finished_status.isDisplayed());
 
 	}
+	
+	@Then("The user clicks the Encrypt button to encrypt the file where an error message pops-up")
+	public void user_clicks_enrypt_and_recieves_an_error_message() throws InterruptedException {
+		
+		Thread.sleep(5000);
+		
+		WebElement encrypt_key = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"/html/body/app-root/app-layout/div/app-encryption/div/div/div/div[1]/form/div/div[2]/div/div[2]/div[2]/button")));
 
-	@When("The user cliks on the Try Decryption button on homepage")
-	public void The_user_cliks_on_the_Try_Decryption_button_on_homepage() {
+		encrypt_key.click();
+
+		
+		WebElement error_message = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+				"/html/body/app-root/app-layout/div/p-toast/div/p-toastitem/div/div/div/div[2]")));
+
+		Assert.assertTrue(error_message.getText().toLowerCase().contains("is not a valid key"));
+
+	}
+
+	@When("The user clicks on the Try Decryption button on homepage")
+	public void The_user_clicks_on_the_Try_Decryption_button_on_homepage() {
 
 		WebElement decryption_button = wait.until(ExpectedConditions.elementToBeClickable(
 				By.xpath("/html/body/app-root/app-layout/div/app-home/div[1]/div[1]/div/div/div[1]/div/div/a[2]")));
